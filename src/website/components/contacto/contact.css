@@ -24,7 +24,7 @@ line-height: 71px;
 .contactForm{
   width: 1043px;
   max-width: 80vw;
-  height: 422px;
+  height: 522px;
   border: 1px solid #FFFFFF;
   border-radius: 20px;
   display: flex;
@@ -33,7 +33,20 @@ line-height: 71px;
   flex-direction: column;
   padding:20px;
 }
-.contactForm>input,textarea{
+.contactForm>textarea{
+  width: 80%;
+  padding: 20px;
+  background: transparent;
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  border: none;
+  border-bottom: 1px solid var(--blanco);
+  color:var(--blanco)
+}
+.inputForm{
   width: 80%;
   padding: 20px;
   background: transparent;
@@ -47,7 +60,7 @@ line-height: 71px;
   color:var(--blanco)
 }
 
-.contactBtn{
+.contactBtn, .contactBtnSent{
   font-family: 'Montserrat',sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -67,6 +80,126 @@ line-height: 71px;
 .contactBtn:hover{
   background: var(--azul);
 }
+.contactBtnSent{
+  background: var(--verde);
+}
+.contactBtnSent:hover{
+  background: var(--verde);
+}
+
+
+/*** CONTACT FORM FORMIK ***/
+/*** CONTACT FORM FORMIK ***/
+/*** CONTACT FORM FORMIK ***/
+.contact{
+  background: var(--verde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 120vh;
+  position: relative;
+}
+.contact::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: var(--bg-dark);
+  clip-path: polygon(100% 0,0 100%, 100% 100%);
+}
+
+.formContainer{
+  margin: 10px 0;
+  width: 60vw;
+  max-width: 1024px;
+  height: 70%;
+
+  z-index: 3;
+}
+.formWrapper{
+  background-color: var(--bg-dark);
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.formInput{
+  font-family: 'Montserrat', sans-serif;
+  width: 80%;
+  margin: 5px 0;
+  padding: 20px;
+  border: none;
+  background: var(--bg-dark);
+  border-bottom: 2px solid var(--verde);
+  color:var(--verde);
+  font-size: 20px;
+}
+
+.formTextarea{
+  min-height: 100px;
+}
+
+.formButton{
+  width:80%;
+  margin: 20px 0;
+  padding:20px;
+  font-size: 22px;
+  background: var(--verde);
+  color: var(--bg-dark);
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.formButton:hover{
+  background-color: var(--rosa);
+}
+.formError{
+  padding: 2px;
+  color: var(--blanco);
+  background: var(--rojo);
+  border-radius: 5px;
+  width: 80%;
+  font-weight: 400;
+  margin-bottom: 10px ;
+}
+.formErrorinput{
+  width: 80%;
+  padding: 20px;
+  background: transparent;
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  border: 3px solid var(--rojo);
+  border-radius: 10px;
+  color:var(--rojo);
+  margin-top: 10px ;
+  /* background: var(--rojo); */
+}
+.formErrorinput:focus{
+  border-bottom: 1px solid var(--rojo);
+}
+
+.formSent{
+color: var(--verde);
+  z-index: 3;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 550px){
+  .formContainer{
+    width: 90vw;
+  }
+}
+
 
 @media (max-width: 990px){
   .contactForm{

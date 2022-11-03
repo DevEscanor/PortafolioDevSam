@@ -57,7 +57,8 @@ line-height: 71px;
   overflow: hidden;
   
   background: linear-gradient(122.08deg, rgba(255, 255, 255, 0.44) 0%, rgba(255, 255, 255, 0.61) 29.17%, rgba(217, 217, 217, 0.13) 100%);
-  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid var(--azul);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(80px);
   z-index: 9;
