@@ -45,7 +45,7 @@ const nameIcons = [
   "DevOps",
   "NodeJs",
   "Express",
-  "SiNestjs",
+  "Nestjs",
   "AdonisJs",
   "Heroku",
   "Relational Databases",
