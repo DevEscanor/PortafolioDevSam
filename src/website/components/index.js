@@ -1,0 +1,7 @@
+export * from './contacto/Contact';
+export * from './footer/Footer';
+export * from './hero/Hero';
+export * from './navbar/Navbar';
+export * from './sections/AcercaDe';
+export * from './sections/Habilidades';
+export * from './sections/Proyectos';

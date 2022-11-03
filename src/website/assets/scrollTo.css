@@ -1,0 +1,33 @@
+.scrollTopButton{
+  color:var(--azul);
+  filter: opacity(75%);
+  position: absolute;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  top:90vh;
+  right: 20px;
+  cursor: pointer;
+}
+.scrollTopButton>svg{
+  transition: ease all 300ms ;
+  font-size: 40px;
+}
+.scrollTopButton>svg:hover{
+  transform: translateY(-10px);
+  filter: opacity(75%);
+
+}
+
+.scrollNone{
+  transition: 300ms ease all;
+  display: none;
+}
+
+@media only screen and (max-width: 550px){
+  .scrollTopButton{
+  top:84vh;
+  right: 14px;
+  }
+}

@@ -1,0 +1,162 @@
+.heroContainer{
+  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+
+}
+.heroWrapper{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:150px;
+  position: relative;
+  background:var(--blanco);
+}
+.heroPhoto{
+  height: 500px;
+}
+.heroText{
+  display: flex;
+  flex-direction: column;
+}
+.heroH1{
+font-family: 'Montserrat',sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 64px;
+line-height: 78px;
+  color: var(--azul);
+}
+.heroH2{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 45px;
+line-height: 55px;
+  color: var(--azul-obscuro);
+}
+.heroH3{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 37px;
+  color: var(--azul-obscuro);
+}
+.linkSvg{
+  position:absolute;
+  bottom:0;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+.arrowSvg{
+  height: 50px;
+  width: 50px;
+  color: rgba(1, 34, 142, 0.5);
+
+  animation: moverbtn 3s ease-in-out infinite;
+  transition: ease all .5s ease-in-out;
+}
+@keyframes moverbtn {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 770px){
+  .heroTexth1{
+
+    margin-left: 40px;
+    font-size: 38px;
+    line-height: unset;
+  }
+  .heroTextEnfasis{
+    font-size: 50px;
+    line-height: unset;
+  }
+  .heroBtn{
+    margin: 20px 40px;
+    font-size: 22px;
+    line-height: unset;
+    width: unset;
+  }
+}
+@media (max-width: 1024px){
+  .heroWrapper{
+    gap:20px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 990px){
+  .heroContainer{
+    /* height: 90vh; */
+    margin-top: unset;
+  }
+  .heroPhoto{
+    height: 400px;
+  }
+}
+@media (max-width: 770px){
+  .heroWrapper{
+    flex-direction: column;
+    margin-top: unset;
+    gap: unset;
+  }
+  .linkSvg{
+    margin-bottom: 10px;
+  }
+
+  .heroText{
+    width: 100%;
+    align-items: center;
+  }
+
+  .heroH1{
+    font-size: 44px;
+    line-height: unset;
+  }
+  .heroH2{
+    font-size: 30px;
+    line-height: unset;
+  }
+  .heroH3{
+    font-size: 20px;
+    line-height: unset;
+  }
+}
+@media (max-width: 550px){
+  .heroContainer{
+    height: 90vh;
+  }
+  .heroPhoto{
+    height: unset;
+    width: 90vw;
+  }
+
+  .heroText{
+    width: 100%;
+    align-items: center;
+  }
+
+  .heroH1{
+    font-size: 44px;
+    line-height: unset;
+  }
+  .heroH2{
+    font-size: 30px;
+    line-height: unset;
+  }
+  .heroH3{
+    font-size: 20px;
+    line-height: unset;
+  }
+}

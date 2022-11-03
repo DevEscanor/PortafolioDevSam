@@ -1,0 +1,76 @@
+.contactContainer{
+  background: var(--azul-obscuro);
+  height:860px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contactText{
+  font-family: 'Montserrat',sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 58px;
+line-height: 71px;
+  width: 100%;
+  text-align: center;
+  color: var(--blanco);
+  padding: 90px 40px;
+}
+
+.contactForm{
+  width: 1043px;
+  max-width: 80vw;
+  height: 422px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding:20px;
+}
+.contactForm>input,textarea{
+  width: 80%;
+  padding: 20px;
+  background: transparent;
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 39px;
+  border: none;
+  border-bottom: 1px solid var(--blanco);
+  color:var(--blanco)
+}
+
+.contactBtn{
+  font-family: 'Montserrat',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: var(--blanco);
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+
+  padding: 10px;
+  margin-top:30px;
+  cursor: pointer;
+  transition: 300ms ease all;
+}
+.contactBtn:hover{
+  background: var(--azul);
+}
+
+@media (max-width: 990px){
+  .contactForm{
+    width: 80vw;
+    margin: 0 40px;
+  }
+}

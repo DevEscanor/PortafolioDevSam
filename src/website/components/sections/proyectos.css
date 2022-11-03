@@ -1,0 +1,233 @@
+.Section2Container{
+  background: var(--blanco-2);
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 40px;
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+}
+.Section2Wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  z-index: 2;
+}
+.habTitle2{
+  width: 100%;
+  text-align:center;
+font-family: 'Montserrat',sans-serif;
+font-style: normal;
+  width: 100%;
+font-weight: 600;
+font-size: 64px;
+line-height: 71px;
+  color: var(--azul);
+}
+@keyframes floating{
+0%{
+  transform: translateY(0px);
+}
+50%{
+  transform: translateY(200px);
+}
+100%{
+  transform: translateY(0px);
+}
+}
+.linkCard{
+  text-decoration: none;
+}
+.section2CardsContainer{
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  flex-direction: column;
+
+  width: 502px;
+  height: auto;
+  min-height: 534px;
+  overflow: hidden;
+  
+  background: linear-gradient(122.08deg, rgba(255, 255, 255, 0.44) 0%, rgba(255, 255, 255, 0.61) 29.17%, rgba(217, 217, 217, 0.13) 100%);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(80px);
+  z-index: 9;
+
+  transition: 300ms ease all;
+  margin-bottom: 100px;
+}
+
+.section2CardsContainer:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 4px 20px 10px rgba(0, 89, 179, 0.31);
+  backdrop-filter: blur(20px);
+  cursor: pointer;
+}
+.section2IMG{
+  width: 502px;
+  height: 284px;
+}
+
+.section2CardTexts{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  padding: 20px;
+}
+
+.section2CardTitle{
+  color: var(--azul);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.section2CardDesc{
+   color: var(--azul);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.tagContainers{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.tag1{
+  border: 2px solid var(--azul);
+  color: var(--azul);
+}
+.tag2{
+  border: 2px solid var(--azul-obscuro);
+  color: var(--azul-obscuro);
+}
+.tag1, .tag2{
+  border-radius: 20px;
+  padding: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/*** TITTLE ANIMATION ***/
+/*** TITTLE ANIMATION ***/
+@keyframes endlesLoop{
+0%{
+  transform: translateX(0);
+}
+100%{
+  transform: translateX(calc(-1050px * 3));
+}
+}
+.movingTitleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-bottom:50px;
+
+  animation: endlesLoop 25s linear infinite;
+  width: calc(1050px * 6);
+}
+
+.movingTitle{
+  font-size: 200px;
+  font-family: 'Play', sans-serif;
+  font-weight: 700;
+  color:transparent;
+  opacity: 0.3;
+
+  -webkit-text-stroke-width: 6px;
+  -webkit-text-stroke-color: var(--azul);
+
+  width: 1050px;
+}
+
+@media (max-width: 990px){
+.Section2Container{
+    margin-top: 40px;
+  }
+  .Section2Wrapper{
+    flex-direction: column;
+  }
+  .section2CardsContainer{
+    margin: unset;
+  }
+  .Section2Wrapper{
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 550px){
+  .section2Title{
+    padding: 40px 0;
+    font-size: 60px;
+  }
+  .section2CardsContainer{
+    width: 80vw;
+    height: auto;
+  }
+  .tagContainers{
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .tag1, .tag2{
+    font-size: 16px;
+  }
+  .habTitle2{
+    color: var(--azul-obscuro);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section2Cricle3{
+  position: absolute;
+  right: -600px;
+  bottom: -330px;
+  width: 636px;
+  height: 636px;
+
+  background: #0059B3;
+  filter: blur(100px);
+}
+.section2Cricle4{
+  animation: floating 7s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 357px;
+  height: 357px;
+
+  background: rgba(0, 124, 247, 0.66);
+  filter: blur(100px);
+}
