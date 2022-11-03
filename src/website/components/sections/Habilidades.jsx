@@ -1,47 +1,59 @@
+import { DiDotnet } from 'react-icons/di';
+import { GoDatabase } from 'react-icons/go';
 import { AiFillGithub, AiFillGitlab } from 'react-icons/ai';
 import { IoInfiniteSharp } from 'react-icons/io5';
-import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaGitAlt, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, SiMicrosoftaccess, SiMysql, SiPostgresql } from 'react-icons/si';
+import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaGitAlt, FaNodeJs, FaDatabase, FaDocker } from 'react-icons/fa';
+import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, SiMicrosoftaccess, SiMongodb, SiMysql, SiNestjs, SiPostgresql, SiTypescript } from 'react-icons/si';
 import './habilidades.css';
 
 const icons = [
+  <DiDotnet />,
   <FaHtml5 />,
   <FaCss3Alt />,
   <SiJavascript />,
-  <FaBootstrap />,
+  <SiTypescript />,
   <FaReact />,
+  <FaBootstrap />,
   <FaGitAlt />,
   <AiFillGitlab />,
   <AiFillGithub />,
   <IoInfiniteSharp />,
   <FaNodeJs />,
   <SiExpress />,
+  <SiNestjs />,
   <SiAdonisjs />,
   <SiHeroku />,
   <FaDatabase />,
-  <SiMicrosoftaccess />,
+  <GoDatabase />,
+  <SiMongodb />,
   <SiPostgresql />,
   <SiMysql />,
+  <FaDocker />
 ]
 
 const nameIcons = [
+  "Visual Basic",
   "HTML5",
   "CSS3",
   "Javascript",
-  "Bootstrap",
+  "Typescript",
   "React",
+  "Bootstrap",
   "Git",
   "GitLab",
   "GitHub",
   "DevOps",
   "NodeJs",
   "Express",
+  "SiNestjs",
   "AdonisJs",
   "Heroku",
   "Relational Databases",
   "Microsoft SQL Server",
+  "MongoDB",
   "PostgreSQL",
   "MySQL",
+  "Docker Products",
 ]
 
 export const Habilidades = () => {
