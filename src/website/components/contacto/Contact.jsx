@@ -68,6 +68,7 @@ export const Contact = () => {
                 onBlur={handleBlur}
                 autoComplete="off"
                 className="inputForm"
+              // required
               />
               {touched.name && errors.name && <div className="formError"><FaInfoCircle /> {errors.name}</div>}
               <input
@@ -79,6 +80,7 @@ export const Contact = () => {
                 onBlur={handleBlur}
                 autoComplete="off"
                 className="inputForm"
+              // required
               />
               {touched.email && errors.email && <div className="formError"><FaInfoCircle /> {errors.email}</div>}
               <input
@@ -90,6 +92,7 @@ export const Contact = () => {
                 onBlur={handleBlur}
                 autoComplete="off"
                 className="inputForm"
+                required
               />
               <textarea
                 id=""
@@ -99,6 +102,7 @@ export const Contact = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 autoComplete="off"
+                required
               >
               </textarea>
               {
