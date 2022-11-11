@@ -7,6 +7,9 @@ import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, SiMicrosoftaccess, SiMon
 import './habilidades.css';
 
 const icons = [
+  <IoInfiniteSharp />,
+  <FaDatabase />,
+  <FaNodeJs />,
   <DiDotnet />,
   <FaHtml5 />,
   <FaCss3Alt />,
@@ -17,13 +20,10 @@ const icons = [
   <FaGitAlt />,
   <AiFillGitlab />,
   <AiFillGithub />,
-  <IoInfiniteSharp />,
-  <FaNodeJs />,
   <SiExpress />,
   <SiNestjs />,
   <SiAdonisjs />,
   <SiHeroku />,
-  <FaDatabase />,
   <GoDatabase />,
   <SiMongodb />,
   <SiPostgresql />,
@@ -32,6 +32,9 @@ const icons = [
 ]
 
 const nameIcons = [
+  "DevOps",
+  "Relational Databases",
+  "NodeJs",
   "Visual Basic",
   "HTML5",
   "CSS3",
@@ -42,13 +45,10 @@ const nameIcons = [
   "Git",
   "GitLab",
   "GitHub",
-  "DevOps",
-  "NodeJs",
   "Express",
   "Nestjs",
   "AdonisJs",
   "Heroku",
-  "Relational Databases",
   "Microsoft SQL Server",
   "MongoDB",
   "PostgreSQL",

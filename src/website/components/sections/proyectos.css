@@ -53,7 +53,7 @@ line-height: 71px;
 
   width: 502px;
   height: auto;
-  min-height: 534px;
+  min-height: 444px;
   overflow: hidden;
   
   background: linear-gradient(122.08deg, rgba(255, 255, 255, 0.44) 0%, rgba(255, 255, 255, 0.61) 29.17%, rgba(217, 217, 217, 0.13) 100%);
@@ -196,6 +196,8 @@ line-height: 71px;
   }
   .habTitle2{
     color: var(--azul-obscuro);
+    font-size:44px;
+    line-height: unset;
   }
 }
 

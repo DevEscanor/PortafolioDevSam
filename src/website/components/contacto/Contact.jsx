@@ -69,7 +69,7 @@ export const Contact = () => {
               {touched.name && errors.name && <div className="formError"><FaInfoCircle /> {errors.name}</div>}
               <input
                 type="email"
-                placeholder="Correo electrónico"
+                placeholder="E-mail"
                 name="email"
                 value={values.email}
                 onChange={handleChange}

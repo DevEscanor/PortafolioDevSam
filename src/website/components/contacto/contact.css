@@ -207,3 +207,10 @@ color: var(--verde);
     margin: 0 40px;
   }
 }
+@media (max-width: 550px){
+  .contactText{
+    padding: 40px;
+    font-size: 44px;
+    line-height: unset;
+  }
+}

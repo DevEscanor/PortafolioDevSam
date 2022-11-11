@@ -86,4 +86,11 @@ line-height: 71px;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   }
+.habWrapper{
+    gap:20px
+  }
+.habTitle{
+    font-size: 44px;
+    line-height: unset;
+  }
 }
