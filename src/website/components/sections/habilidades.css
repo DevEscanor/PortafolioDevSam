@@ -60,6 +60,39 @@ line-height: 71px;
   flex-direction: column;
   align-items: center;
 }
+.habItem:nth-child(2){
+  transition-delay:100ms;
+}
+.habItem:nth-child(3){
+  transition-delay:200ms;
+}
+.habItem:nth-child(4){
+  transition-delay:300ms;
+}
+.habItem:nth-child(5){
+  transition-delay:400ms;
+}
+.habItem:nth-child(6){
+  transition-delay:500ms;
+}
+.habItem:nth-child(7){
+  transition-delay:600ms;
+}
+.habItem:nth-child(8){
+  transition-delay:500ms;
+}
+.habItem:nth-child(9){
+  transition-delay:500ms;
+}
+.habItem:nth-child(-3){
+  transition-delay:300ms;
+}
+.habItem:nth-child(-2){
+  transition-delay:200ms;
+}
+.habItem:nth-child(-1){
+  transition-delay:100ms;
+}
 
 .iconItem{
   font-size: 50px;

@@ -1,16 +1,24 @@
+import { useEffect, useRef, useState } from 'react';
 import { cardsProjects } from '../../assets/cards'
 import './proyectos.css';
 
-// const proyectos = [
-//   'Proyectos ',
-//   'Proyectos ',
-//   'Proyectos ',
-//   'Proyectos ',
-//   'Proyectos ',
-//   'Proyectos ',
-// ];
-
 export const Proyectos = () => {
+  const refProyects = useRef(null);
+
+  const [cardProyectIsVisible, setcardProyectIsVisible] = useState();
+  useEffect(() => {
+    const { current } = refProyects;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setcardProyectIsVisible(entry.isIntersecting);
+      // console.log('entry', entry)
+    })
+    observer.observe(current)
+    return () => {
+      observer.disconnect(current); // *** Use the same element
+    }
+  }, [])
+
   return (
     <section id='Proyectos' className='Section2Container'>
       <p className='habTitle2'>
@@ -25,9 +33,9 @@ export const Proyectos = () => {
         ))
       */}
       </div>
-      <div className='Section2Wrapper'>
+      <div className='Section2Wrapper' ref={refProyects}>
         {cardsProjects.slice(0).map(cardTwo => (
-          <a href={cardTwo.url} className="linkCard" target="_blank" rel="noreferrer" key={cardTwo.id * 9999}>
+          <a href={cardTwo.url} className={`linkCard ${cardProyectIsVisible ? 'show' : 'hiden'}`} target="_blank" rel="noreferrer" key={cardTwo.id * 9999}>
             <div className='section2CardsContainer' >
               <img src={cardTwo.img} alt={cardTwo.title} className='section2IMG' />
               <div key={cardTwo.id} className='section2CardTexts'>

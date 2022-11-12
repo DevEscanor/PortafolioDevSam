@@ -30,6 +30,7 @@ font-weight: 700;
 font-size: 82px;
 line-height: 100px;
   color: var(--blanco);
+  animation-delay: 200ms;
 }
 
 .parSectionOne{
@@ -39,6 +40,15 @@ font-weight: 400;
 font-size: 20px;
 line-height: 24px;
   color: var(--blanco);
+}
+.parSectionOne:nth-child(2){
+  transition-delay:300ms;
+}
+.parSectionOne:nth-child(3){
+  transition-delay:300ms;
+}
+.parSectionOne:nth-child(4){
+  transition-delay:300ms;
 }
 .parSectionOne>a{
 text-decoration: none;
@@ -50,6 +60,42 @@ font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 23px;
+}
+
+.hiden{
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+  transform: translateY(-20%);
+}
+.hidenRight{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition-delay: 0.9s;
+}
+.hidenLeft{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  /* transition-delay: 0.5s; */
+}
+.show{
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+  transition: ease all 1s;
+}
+/* .sectionOneCard:nth-child(2){ */
+/*   transition-delay:200ms; */
+/* } */
+/* .sectionOneCard:nth-child(3){ */
+/*   transition-delay:400ms; */
+/* } */
+@media(prefers-reduced-motion){
+  .hiden{
+  transition: none;
+  }
 }
 
 @media (max-width: 990px){

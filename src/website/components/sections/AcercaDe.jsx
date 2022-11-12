@@ -1,11 +1,28 @@
-import './acercade.css'
+import { useEffect, useRef, useState } from 'react';
+import './acercade.css';
 import sectionOneIMG from '../../media/images/pc-icon.png'
 
 export const AcercaDe = () => {
+  const refCard = useRef(null);
+
+  const [cardIsVisible, setCardIsVisible] = useState();
+  useEffect(() => {
+    const { current } = refCard;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setCardIsVisible(entry.isIntersecting);
+      // console.log('entry', entry)
+    })
+    observer.observe(current)
+    return () => {
+      observer.disconnect(current); // *** Use the same element
+    }
+  }, [])
+
   return (
     <section id='Acerca de' className='sectionOneContainer'>
-      <div className='sectionOneWrapper'>
-        <div className='leftSideSectionOne'>
+      <div className='sectionOneWrapper' >
+        <div ref={refCard} className={`leftSideSectionOne ${cardIsVisible ? 'show' : 'hidenLeft'}`}>
           <h2 className='h2SectionOne'>
             Hola, soy
           </h2>
@@ -29,7 +46,7 @@ export const AcercaDe = () => {
             Gran parte de mi carrera profesional ha estado dedicada al software orientado a Microfinanzas, también realizo estas mismas labores aplicadas al diseño y desarrollo de Backend / Frontend.
           </p>
         </div>
-        <div className='rightSideSectionOne'>
+        <div className={`rightSideSectionOne ${cardIsVisible ? 'show' : 'hidenRight'}`}>
           <img src={sectionOneIMG} alt='' className='rightSideIMGSectionOne' />
         </div>
       </div>

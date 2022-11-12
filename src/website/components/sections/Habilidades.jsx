@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react';
 import { DiDotnet } from 'react-icons/di';
 import { GoDatabase } from 'react-icons/go';
 import { AiFillGithub, AiFillGitlab } from 'react-icons/ai';
@@ -75,12 +76,33 @@ export const Habilidades = () => {
 }
 
 const ListIcons = () => {
+  const refItems = useRef(null);
+
+  const [itemIsVisible, setItemIsVisible] = useState();
+  console.log(itemIsVisible)
+  useEffect(() => {
+    const { current } = refItems;
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setItemIsVisible(entry.isIntersecting);
+      // console.log('entry', entry)
+    })
+    observer.observe(current)
+    return () => {
+      observer.disconnect(current); // *** Use the same element
+    }
+  }, [])
+
+  const handleItems = () => {
+
+  }
+
   return (
-    <ul className='habList'>
+    <ul ref={refItems} className='habList'>
       {
         icons.map((item, index) => (
-          <li key={index} className='habItem '>
-            <span className='iconItem'>
+          <li key={index} className={`habItem ${itemIsVisible ? 'show' : 'hidenLeft'}`}>
+            <span className='iconItem' onScroll={handleItems}>
               {item}
             </span>
             <span className='nameItem'>
