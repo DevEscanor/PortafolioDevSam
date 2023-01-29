@@ -26,7 +26,7 @@ function LinkItems({ estadoMiniMenu, cerrarMenu }) {
       ))}
       <Link to='Contactanos' smooth={true} onClick={handle}>
         <li className='navbarItems navbarBtn'>
-          Contactame
+          Contáctame
         </li>
       </Link>
     </ul>

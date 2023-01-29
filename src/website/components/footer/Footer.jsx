@@ -35,7 +35,7 @@ export const Footer = () => {
         </li>
       </ul>
       <p className='footerText'>
-        Copyright © 2022 <span>David Suarez</span>
+        Copyright © 2023 <span>David Suarez</span>
       </p>
     </footer>
   )

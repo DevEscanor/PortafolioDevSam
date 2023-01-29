@@ -4,7 +4,7 @@ import { GoDatabase } from 'react-icons/go';
 import { AiFillGithub, AiFillGitlab } from 'react-icons/ai';
 import { IoInfiniteSharp } from 'react-icons/io5';
 import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaGitAlt, FaNodeJs, FaDatabase, FaDocker } from 'react-icons/fa';
-import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, SiMicrosoftaccess, SiMongodb, SiMysql, SiNestjs, SiPostgresql, SiTypescript } from 'react-icons/si';
+import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, SiKubernetes, SiMicrosoftaccess, SiMongodb, SiMysql, SiNestjs, SiPostgresql, SiTypescript } from 'react-icons/si';
 import './habilidades.css';
 
 const icons = [
@@ -29,7 +29,8 @@ const icons = [
   <SiMongodb />,
   <SiPostgresql />,
   <SiMysql />,
-  <FaDocker />
+  <FaDocker />,
+  <SiKubernetes />
 ]
 
 const nameIcons = [
@@ -55,6 +56,7 @@ const nameIcons = [
   "PostgreSQL",
   "MySQL",
   "Docker Products",
+  "Kubernetes"
 ]
 
 export const Habilidades = () => {
