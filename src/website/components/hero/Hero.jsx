@@ -2,8 +2,10 @@ import './hero.css'
 import { Link } from 'react-scroll'
 import heroImg from '../../media/images/daviHero.png'
 import { IoIosArrowDown } from 'react-icons/io'
+import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section id='Hero' className='heroContainer'>
       <div className='heroWrapper'>
@@ -15,13 +17,13 @@ export const Hero = () => {
             David Suarez
           </h1>
           <h2 className='heroH2'>
-            FullStack Developer
+            {t("hero.title")}
           </h2>
           <h3 className='heroH3'>
-            Co-Founder y CTO de Arcadius
+            {t("hero.subTitle")}
           </h3>
         </div>
-        <Link to='Acerca de' smooth={true} className='linkSvg' >
+        <Link to='AcercaDe' smooth={true} className='linkSvg' >
           <IoIosArrowDown className='arrowSvg' />
         </Link>
       </div>

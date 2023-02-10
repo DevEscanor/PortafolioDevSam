@@ -3,8 +3,10 @@ import { Formik } from "formik";
 import emailjs from 'emailjs-com';
 import { FaInfoCircle } from 'react-icons/fa'
 import './contact.css';
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   const [formSent, setFormSent] = useState(false);
   const form = useRef();
 
@@ -13,7 +15,7 @@ export const Contact = () => {
       className="contactContainer">
       <div className="contactWrapper">
         <p className="contactText">
-          ¡Estemos en contacto!
+          {t("contact.mainTitle")}
         </p>
         <Formik
           initialValues={{
@@ -26,15 +28,15 @@ export const Contact = () => {
             let errores = {};
 
             if (!valores.name) {
-              errores.name = 'Por favor ingrese su nombre completo'
+              errores.name = t("contact.errorName")
             } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.name)) {
-              errores.name = "Solo tiene permitido agregar letras y espacios"
+              errores.name = t("contact.errorName2")
             }
 
             if (!valores.email) {
-              errores.email = 'Por favor ingrese una dirección de correo electrónico'
+              errores.email = t("contact.errorEmail")
             } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)) {
-              errores.email = "Su correo solo tiene permitido tener letras, números, puntos, guiones y guiones bajos"
+              errores.email = t("contact.errorEmail2")
             }
 
             return errores;
@@ -57,7 +59,7 @@ export const Contact = () => {
             <form className="contactForm" ref={form} onSubmit={handleSubmit}>
               <input
                 type="text"
-                placeholder="Nombre"
+                placeholder="Full Name"
                 name="name"
                 value={values.name}
                 onChange={handleChange}
@@ -81,7 +83,7 @@ export const Contact = () => {
               {touched.email && errors.email && <div className="formError"><FaInfoCircle /> {errors.email}</div>}
               <input
                 type="text"
-                placeholder="Asunto"
+                placeholder="Subject"
                 name="subject"
                 value={values.subject}
                 onChange={handleChange}
@@ -93,7 +95,7 @@ export const Contact = () => {
               <textarea
                 id=""
                 name="message"
-                placeholder="Mensaje"
+                placeholder="Message"
                 value={values.message}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -105,11 +107,11 @@ export const Contact = () => {
                 formSent
                   ?
                   <button className="contactBtnSent">
-                    ¡Mensaje Enviado!
+                    {t("contact.buttonSent")}
                   </button>
                   :
                   <button className="contactBtn">
-                    ¡Enviar!
+                    {t("contact.buttonSend")}
                   </button>
               }
             </form>

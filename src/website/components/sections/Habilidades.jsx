@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from "react-i18next";
 import { DiDotnet } from 'react-icons/di';
 import { GoDatabase } from 'react-icons/go';
 import { AiFillGithub, AiFillGitlab } from 'react-icons/ai';
 import { IoInfiniteSharp } from 'react-icons/io5';
 import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaGitAlt, FaNodeJs, FaDatabase, FaDocker } from 'react-icons/fa';
-import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, SiKubernetes, SiMicrosoftaccess, SiMongodb, SiMysql, SiNestjs, SiPostgresql, SiTypescript } from 'react-icons/si';
+import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, SiKubernetes, /* SiMicrosoftaccess ,*/ SiMongodb, SiMysql, SiNestjs, SiPostgresql, SiTypescript } from 'react-icons/si';
 import './habilidades.css';
 
 const icons = [
@@ -60,6 +61,7 @@ const nameIcons = [
 ]
 
 export const Habilidades = () => {
+  const { t } = useTranslation();
   return (
     <section id='Habilidades' className='habContainer'>
       <div className='habWrapper'>
@@ -68,8 +70,9 @@ export const Habilidades = () => {
         </div >
         <div className='rightSideHab'>
           <h2 className='habTitle'>
-            Stack de Tecnologías
-            dominadas
+            {/* Stack de Tecnologías 
+             dominadas */}
+            {t("skills.title")}
           </h2>
         </div>
       </div >

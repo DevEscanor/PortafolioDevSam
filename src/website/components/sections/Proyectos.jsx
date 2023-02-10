@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from "react-i18next";
 import { cardsProjects } from '../../assets/cards'
 import './proyectos.css';
 
 export const Proyectos = () => {
+  const { t } = useTranslation();
   const refProyects = useRef(null);
 
   const [cardProyectIsVisible, setcardProyectIsVisible] = useState();
@@ -22,7 +24,8 @@ export const Proyectos = () => {
   return (
     <section id='Proyectos' className='Section2Container'>
       <p className='habTitle2'>
-        Proyectos
+        {/* Proyectos */}
+          {t("projects.title")}
       </p>
       <div className='movingTitleContainer'>
         {/*
@@ -40,10 +43,12 @@ export const Proyectos = () => {
               <img src={cardTwo.img} alt={cardTwo.title} className='section2IMG' />
               <div key={cardTwo.id} className='section2CardTexts'>
                 <h3 className='section2CardTitle'>
-                  {cardTwo.title}
+                  {/*cardTwo.title*/}
+              {t(`projects.card${cardTwo.id}Title`)}
                 </h3>
                 <p className='section2CardDesc'>
-                  {cardTwo.description}
+                  {/*cardTwo.description*/}
+              {t(`projects.card${cardTwo.id}Content`)}
                 </p>
               </div>
             </div>

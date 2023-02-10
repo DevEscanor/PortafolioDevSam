@@ -2,14 +2,20 @@ import './navbar.css'
 import logo from '../../media/images/logoDavi.png'
 import { Link } from 'react-scroll';
 import { useState } from 'react';
+import LanguageBTNs from '../../layout/LanguageBTNs';
+import { useTranslation } from "react-i18next";
 
+/*
 const links = [
   'Acerca de',
   'Habilidades',
   'Proyectos',
 ]
+*/
 
 function LinkItems({ estadoMiniMenu, cerrarMenu }) {
+
+  const { t } = useTranslation();
 
   const handle = () => {
     cerrarMenu()
@@ -17,18 +23,27 @@ function LinkItems({ estadoMiniMenu, cerrarMenu }) {
 
   return (
     <ul className={estadoMiniMenu ? 'navbarList' : 'navbarListNone'}>
-      {links.map(item => (
-        <li className='navbarItems' key={item} >
-          <Link to={item} smooth={true} onClick={handle}>
-            {item}
-          </Link>
-        </li>
-      ))}
+      <li className='navbarItems'  >
+        <Link to="AcercaDe" smooth={true} onClick={handle}>
+          {t("navbar.navlink1")}
+        </Link>
+      </li>
+      <li className='navbarItems'  >
+        <Link to="Habilidades" smooth={true} onClick={handle}>
+          {t("navbar.navlink2")}
+        </Link>
+      </li>
+      <li className='navbarItems'  >
+        <Link to="Proyectos" smooth={true} onClick={handle}>
+          {t("navbar.navlink3")}
+        </Link>
+      </li>
       <Link to='Contactanos' smooth={true} onClick={handle}>
         <li className='navbarItems navbarBtn'>
-          Contáctame
+          {t("navbar.navlink4")}
         </li>
       </Link>
+      <LanguageBTNs onClick={handle}/>
     </ul>
   )
 }

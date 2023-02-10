@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "navlink1": "About me",
+    "navlink2": "Skills",
+    "navlink3": "Projects",
+    "navlink4": "Contact me"
+  },
+  "hero": {
+    "title": "Fullstack Developer",
+    "subTitle": "Co-Founder y CTO of Arcadius"
+  },
+  "about": {
+    "text1": "Hello, I am",
+    "text2": "I am a computer entrepreneur and in love with technology.",
+    "text3": "I have worked since 2019 as an Architect and Software developer for the",
+    "text4": "company of which I am Co-Founder",
+    "text5": "My main skills are project architecture and software development focused mainly on Node.js applications.",
+    "text6": "Much of my professional career has been dedicated to software oriented to Microfinance, I also carry out these same tasks applied to the design and development of Backend / Frontend."
+  },
+  "skills":{
+    "title":"Mastered Technologies"
+  },
+  "projects":{
+    "title":"Projects",
+    "card1Title":"San Juan Hotel",
+    "card1Content":"We created a Web App for room reservations with a Dashboard for managing reservations and staff.",
+    "card2Title":"Sisprestamos",
+    "card2Content":"System that allows carrying out portfolio and personnel control at the time of disbursing the credits applied to microfinance institutions.",
+    "card3Title":"Arcadius",
+    "card3Content":"Main site of the Arcadius website"
+  },
+  "contact": {
+    "mainTitle": "Let's stay in touch!",
+    "buttonSend": "Send!",
+    "buttonSent": "Your message has been Sent!",
+    "errorName": "Please enter your full name",
+    "errorName2": "You are only allowed to add letters and spaces",
+    "errorEmail": "Please enter an email address",
+    "errorEmail2": "Your email is only allowed to have letters, numbers, periods, hyphens, and underscores"
+  }
+}
