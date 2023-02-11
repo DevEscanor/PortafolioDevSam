@@ -84,7 +84,7 @@ const ListIcons = () => {
   const refItems = useRef(null);
 
   const [itemIsVisible, setItemIsVisible] = useState();
-  console.log(itemIsVisible)
+  // console.log(itemIsVisible)
   useEffect(() => {
     const { current } = refItems;
     const observer = new IntersectionObserver((entries) => {

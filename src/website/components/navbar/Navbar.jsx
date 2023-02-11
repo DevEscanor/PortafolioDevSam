@@ -38,12 +38,12 @@ function LinkItems({ estadoMiniMenu, cerrarMenu }) {
           {t("navbar.navlink3")}
         </Link>
       </li>
+        <LanguageBTNs onClick={handle} />
       <Link to='Contactanos' smooth={true} onClick={handle}>
         <li className='navbarItems navbarBtn'>
           {t("navbar.navlink4")}
         </li>
       </Link>
-      <LanguageBTNs onClick={handle}/>
     </ul>
   )
 }
