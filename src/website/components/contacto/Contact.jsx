@@ -47,7 +47,7 @@ export const Contact = () => {
             setTimeout(() => setFormSent(false), 5000)
 
             //El envia del correo con emailjs.
-            emailjs.sendForm('service_pi9x2gs', 'template_xgui69i', form.current, 'nMjdwAd3T24fsqWG5')
+            emailjs.sendForm('service_ubwrvbp', 'template_jxwbzcl', form.current, 'qkRqCIXlHbHdQXhvL')
               .then((result) => {
                 console.log(result.text);
               }, (error) => {
