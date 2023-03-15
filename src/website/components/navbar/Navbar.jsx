@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import { useState } from 'react';
 import LanguageBTNs from '../../layout/LanguageBTNs';
 import { useTranslation } from "react-i18next";
+import { FaLanguage } from "react-icons/fa";
 
 /*
 const links = [
@@ -38,7 +39,11 @@ function LinkItems({ estadoMiniMenu, cerrarMenu }) {
           {t("navbar.navlink3")}
         </Link>
       </li>
+      <div className='dropDownBtn'>
+        <FaLanguage style={{fontSize:"2rem",color:"var(--azul)"}}/>
+        Language ▾
         <LanguageBTNs onClick={handle} />
+      </div>
       <Link to='Contactanos' smooth={true} onClick={handle}>
         <li className='navbarItems navbarBtn'>
           {t("navbar.navlink4")}

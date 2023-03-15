@@ -1,5 +1,4 @@
-
-.navbarContainer{
+.navbarContainer {
   position: fixed;
   width: 100vw;
   height: 60px;
@@ -13,7 +12,7 @@
 
   z-index: 999;
 }
-.navbarWrapper{
+.navbarWrapper {
   width: 1024px;
   display: flex;
   align-items: center;
@@ -22,42 +21,68 @@
   position: relative;
 }
 
-.daviLogo{
+.daviLogo {
   height: 48px;
   cursor: pointer;
 }
 
-.navbarList, .navbarListNone{
+.navbarList,
+.navbarListNone {
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 }
-.navbarList>a, .navbarListNone>a{
+.navbarList > a,
+.navbarListNone > a {
   text-decoration: none;
 }
-.navbarItems{
+.navbarItems {
   font-size: 16px;
   padding: 10px;
   list-style: none;
   cursor: pointer;
   font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  color:var(--azul-links);
+  font-family: "Montserrat", sans-serif;
+  color: var(--azul-links);
 }
-.navbarBtn{
+.navbarBtn {
   background: var(--azul);
   color: var(--blanco);
   border-radius: 10px;
   padding: 10px 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.dropDownBtn {
+  padding: 0 5px;
+  color:var(--azul);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+.showDropdown {
+  position: absolute;
+  top: 30px;
+
+  display: none;
+}
+.dropDownBtn:hover .showDropdown{
+  display: flex;
+  background: var(--blanco);
+  padding:5px 5px;
+  border-radius: 10px;
+  border: 1px solid var(--azul);
+  
 }
 
-.miniMenu, .miniMenuEquis{
+.miniMenu,
+.miniMenuEquis {
   display: none;
 }
 
-.navbar__btn__lang{
+.navbar__btn__lang {
   padding: 2px 10px;
   background: transparent;
   border: none;
@@ -68,29 +93,29 @@
   outline: none;
 }
 
-.navbar__btn__lang:nth-child(1){
+.navbar__btn__lang:nth-child(1) {
   margin-left: 10px;
 }
-.navbar__btn__lang:nth-child(2){
+.navbar__btn__lang:nth-child(2) {
   margin-right: 10px;
 }
 
-.active__lang{
+.active__lang {
   background: var(--azul);
   color: var(--blanco);
 }
 
-@media (max-width: 1024px){
-.navbarWrapper{
-    padding:0 40px ;
+@media (max-width: 1024px) {
+  .navbarWrapper {
+    padding: 0 40px;
   }
 }
 
-@media (max-width: 990px){
-  .navbarListNone{
+@media (max-width: 990px) {
+  .navbarListNone {
     display: none;
   }
-  .navbarList{
+  .navbarList {
     /* display: none; */
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -112,63 +137,64 @@
     align-items: center;
   }
 
-  .navbarWrapper{
+  .navbarWrapper {
     justify-content: center;
   }
-  
-  .miniMenu, .miniMenuEquis{
+
+  .miniMenu,
+  .miniMenuEquis {
     display: flex;
     flex-direction: column;
     width: 2rem;
     height: 3rem;
     border: 0;
     background: transparent;
-    gap: .55rem;
+    gap: 0.55rem;
     position: absolute;
     right: 30px;
     top: 10px;
     cursor: pointer;
   }
-  .miniMenu>div{
+  .miniMenu > div {
     background: var(--azul);
     height: 4px;
     width: 100%;
     border-radius: 5px;
-    transition: all .5s;
+    transition: all 0.5s;
     transform-origin: left;
   }
-  .miniMenuEquis>div{
+  .miniMenuEquis > div {
     background: var(--azul);
     height: 4px;
     width: 100%;
     border-radius: 5px;
-    transition: all .5s;
+    transition: all 0.5s;
     transform-origin: left;
   }
-  .miniMenuEquis div:first-child{
+  .miniMenuEquis div:first-child {
     transform: rotate(50deg);
   }
-  .miniMenuEquis div:nth-child(2){
+  .miniMenuEquis div:nth-child(2) {
     opacity: 0;
   }
-  .miniMenuEquis div:last-child{
+  .miniMenuEquis div:last-child {
     transform: rotate(-50deg);
   }
 }
-@media (max-width: 550px){
-  .miniMenu{
+@media (max-width: 550px) {
+  .miniMenu {
     right: 20px;
   }
-  .navbarItems{
+  .navbarItems {
     font-size: 24px;
   }
-  .navbar__btn__lang{
+  .navbar__btn__lang {
     font-size: 1.2rem;
   }
-.navbar__btn__lang:nth-child(1){
-  margin-left: unset;
-}
-.navbar__btn__lang:nth-child(2){
-  margin-right:unset;
-}
+  .navbar__btn__lang:nth-child(1) {
+    margin-left: unset;
+  }
+  .navbar__btn__lang:nth-child(2) {
+    margin-right: unset;
+  }
 }
