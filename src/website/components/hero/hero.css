@@ -61,6 +61,27 @@
   gap:150px;
   position: relative;
   background:var(--blanco);
+  transition: all 0.3s ease;
+}
+
+/* Dark mode hero wrapper */
+[data-theme="dark"] .heroWrapper {
+  background: var(--azul-obscuro);
+}
+
+/* Dark mode hero text - sin recuadro */
+[data-theme="dark"] .heroText {
+  background: transparent;
+  border: none;
+}
+
+/* Dark mode hero photo */
+[data-theme="dark"] .heroPhoto {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+[data-theme="dark"] .heroPhoto:hover {
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
 }
 .heroPhoto{
   height: 340px;
@@ -199,7 +220,6 @@ line-height: 37px;
   .heroText{
     width: 100%;
     align-items: center;
-    padding: 20px;
   }
 
   .heroH1{

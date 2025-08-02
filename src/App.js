@@ -1,10 +1,13 @@
 import { Home } from "./website/pages";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const App = () => {
   return (
-    <div className="app-container">
-      <Home />
-    </div>
+    <ThemeProvider>
+      <div className="app-container">
+        <Home />
+      </div>
+    </ThemeProvider>
   );
 }
 

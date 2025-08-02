@@ -5,6 +5,7 @@ import { useState } from 'react';
 import LanguageBTNs from '../../layout/LanguageBTNs';
 import { useTranslation } from "react-i18next";
 import { FaLanguage } from "react-icons/fa";
+import { ThemeToggle } from './ThemeToggle';
 
 /*
 const links = [
@@ -44,6 +45,7 @@ function LinkItems({ estadoMiniMenu, cerrarMenu }) {
         Language ▾
         <LanguageBTNs onClick={handle} />
       </div>
+      <ThemeToggle />
       <Link to='Contactanos' smooth={true} onClick={handle}>
         <li className='navbarItems navbarBtn'>
           {t("navbar.navlink4")}

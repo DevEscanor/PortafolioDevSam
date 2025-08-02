@@ -29,6 +29,71 @@ body {
 .app-container {
   min-height: 100vh;
   background: var(--blanco);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  --azul: #4A90E2;
+  --azul-links: #6BA5E8;
+  --azul-obscuro: #2C3E50;
+  --blanco: #1A1A1A;
+  --verde: #2ECC71;
+  --rojo: #E74C3C;
+}
+
+/* Asegurar que el contenido sea visible */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--blanco);
+  color: var(--azul-obscuro);
+  transition: all 0.3s ease;
+}
+
+/* Dark mode body */
+[data-theme="dark"] body {
+  background: var(--azul-obscuro);
+  color: var(--blanco);
+}
+
+[data-theme="dark"] .app-container {
+  background: var(--azul-obscuro);
+}
+
+[data-theme="dark"] .navbarContainer {
+  background: rgba(26, 26, 26, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="dark"] .navbarItems {
+  color: var(--blanco);
+}
+
+[data-theme="dark"] .navbarItems:hover {
+  color: var(--azul);
+}
+
+[data-theme="dark"] .heroWrapper {
+  background: var(--azul-obscuro);
+}
+
+[data-theme="dark"] .heroH1,
+[data-theme="dark"] .heroH2,
+[data-theme="dark"] .heroH3,
+[data-theme="dark"] .heroH4 {
+  color: var(--blanco);
+}
+
+[data-theme="dark"] .sectionOneContainer {
+  background: linear-gradient(90deg, #2C3E50 0%, #34495E 100%);
+}
+
+[data-theme="dark"] .footer {
+  background: var(--azul-obscuro);
 }
 h1 {
   font-family: 'Montserrat', sans-serif;

@@ -14,6 +14,32 @@
   z-index: 999;
   transition: all 0.3s ease;
 }
+
+/* Dark mode navbar */
+[data-theme="dark"] .navbarContainer {
+  background: rgba(26, 26, 26, 0.95);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Dark mode navbar items */
+[data-theme="dark"] .navbarItems {
+  color: var(--blanco);
+}
+
+[data-theme="dark"] .navbarItems:hover {
+  color: var(--azul);
+}
+
+/* Dark mode navbar button */
+[data-theme="dark"] .navbarBtn {
+  background: var(--azul);
+  color: var(--azul-obscuro);
+}
+
+[data-theme="dark"] .navbarBtn:hover {
+  background: var(--azul-links);
+  color: var(--blanco);
+}
 .navbarWrapper {
   width: 1024px;
   display: flex;
@@ -32,6 +58,11 @@
 .daviLogo:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
+}
+
+/* Dark mode logo */
+[data-theme="dark"] .daviLogo:hover {
+  filter: brightness(1.2);
 }
 
 .navbarList,
@@ -54,6 +85,7 @@
   font-family: "Montserrat", sans-serif;
   color: var(--azul-links);
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .navbarItems:hover {
@@ -100,6 +132,13 @@
   animation: fadeIn 0.3s ease;
 }
 
+/* Dark mode dropdown */
+[data-theme="dark"] .dropDownBtn:hover .showDropdown {
+  background: rgba(26, 26, 26, 0.95);
+  border: 1px solid var(--azul);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -138,6 +177,17 @@
   background: var(--azul);
   color: var(--blanco);
   transform: scale(1.05);
+}
+
+/* Dark mode language buttons */
+[data-theme="dark"] .navbar__btn__lang {
+  color: var(--blanco);
+  border: 1px solid var(--azul);
+}
+
+[data-theme="dark"] .navbar__btn__lang:hover {
+  background: var(--azul);
+  color: var(--azul-obscuro);
 }
 
 .navbar__btn__lang:nth-child(1) {
