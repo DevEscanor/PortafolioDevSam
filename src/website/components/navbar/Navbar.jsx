@@ -40,17 +40,17 @@ function LinkItems({ estadoMiniMenu, cerrarMenu }) {
           {t("navbar.navlink3")}
         </Link>
       </li>
+      <li className='navbarItems'  >
+        <Link to="Contactanos" smooth={true} onClick={handle}>
+          {t("navbar.navlink4")}
+        </Link>
+      </li>
       <div className='dropDownBtn'>
         <FaLanguage style={{fontSize:"2rem",color:"var(--azul)"}}/>
         Language ▾
         <LanguageBTNs onClick={handle} />
       </div>
       <ThemeToggle />
-      <Link to='Contactanos' smooth={true} onClick={handle}>
-        <li className='navbarItems navbarBtn'>
-          {t("navbar.navlink4")}
-        </li>
-      </Link>
     </ul>
   )
 }
