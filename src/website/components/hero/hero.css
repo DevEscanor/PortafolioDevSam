@@ -1,3 +1,31 @@
+/* Estilos específicos para Hero con Libertinus Serif */
+.heroH1 {
+  font-family: 'Libertinus Serif', serif !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: var(--azul);
+}
+
+.heroH2 {
+  font-family: 'Libertinus Serif', serif !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: var(--azul-obscuro);
+}
+
+.heroH3 {
+  font-family: 'Libertinus Serif', serif !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--azul-obscuro);
+}
+
 .heroContainer{
   margin-top: 50px;
   width: 100%;
@@ -22,6 +50,8 @@
   display: flex;
   flex-direction: column;
 }
+/* Clases originales comentadas para usar Libertinus Serif */
+/*
 .heroH1{
 font-family: 'Montserrat',sans-serif;
 font-style: normal;
@@ -46,6 +76,7 @@ font-size: 30px;
 line-height: 37px;
   color: var(--azul-obscuro);
 }
+*/
 .linkSvg{
   position:absolute;
   bottom:0;
