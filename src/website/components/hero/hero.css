@@ -6,6 +6,7 @@
   font-size: 64px;
   line-height: 78px;
   color: var(--azul);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .heroH2 {
@@ -16,6 +17,7 @@
   line-height: 55px;
   color: var(--azul-obscuro);
   margin-bottom: 8px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .heroH3 {
@@ -26,6 +28,7 @@
   line-height: 30px;
   color: var(--azul-obscuro);
   max-width: 400px;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .heroH4 {
@@ -36,14 +39,18 @@
   line-height: 30px;
   color: var(--azul-obscuro);
   max-width: 400px;
+  animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 .heroContainer{
   margin-top: 50px;
   width: 100%;
   height: 100vh;
-
+  position: relative;
+  overflow: hidden;
 }
+
+/* Efectos de fondo removidos para mantener el diseño limpio */
 .heroWrapper{
   overflow: hidden;
   width: 100%;
@@ -57,11 +64,23 @@
 }
 .heroPhoto{
   height: 340px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.heroPhoto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
 }
 .heroText{
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+  z-index: 2;
 }
 /* Clases originales comentadas para usar Libertinus Serif */
 /*
@@ -95,15 +114,32 @@ line-height: 37px;
   bottom:0;
   margin-bottom: 45px;
   cursor: pointer;
+  z-index: 3;
 }
 .arrowSvg{
   height: 50px;
   width: 50px;
   color: rgba(1, 34, 142, 0.5);
-
   animation: moverbtn 3s ease-in-out infinite;
   transition: ease all .5s ease-in-out;
+  cursor: pointer;
 }
+
+.arrowSvg:hover {
+  color: rgba(1, 34, 142, 0.8);
+  transform: scale(1.1);
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes moverbtn {
   0%{
     transform: translateY(0px);
@@ -153,7 +189,8 @@ line-height: 37px;
   .heroWrapper{
     flex-direction: column;
     margin-top: unset;
-    gap: unset;
+    gap: 40px;
+    padding: 20px;
   }
   .linkSvg{
     margin-bottom: 10px;
@@ -162,6 +199,7 @@ line-height: 37px;
   .heroText{
     width: 100%;
     align-items: center;
+    padding: 20px;
   }
 
   .heroH1{

@@ -55,7 +55,13 @@ list-style: none;
   justify-content: space-between;
   gap: 10px;
   width: 100%;
+  transition: all 0.3s ease;
   /* flex-direction: column; */
+}
+
+.footerItem>a:hover {
+  color: var(--azul);
+  transform: translateY(-3px);
 }
 
 .footerItem>a>svg{
