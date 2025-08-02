@@ -14,7 +14,7 @@ export const Hero = () => {
         </div>
         <div className='heroText'>
           <h1 className='heroH1'>
-            David Suarez
+            DevSuarez
           </h1>
           <h2 className='heroH2'>
             {t("hero.title")}
