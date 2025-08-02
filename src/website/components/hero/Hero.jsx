@@ -22,6 +22,9 @@ export const Hero = () => {
           <h3 className='heroH3'>
             {t("hero.subTitle")}
           </h3>
+          <h4 className='heroH4'>
+            {t("hero.subTitle2")}
+          </h4>
         </div>
         <Link to='AcercaDe' smooth={true} className='linkSvg' >
           <IoIosArrowDown className='arrowSvg' />

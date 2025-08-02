@@ -15,15 +15,27 @@
   font-size: 45px;
   line-height: 55px;
   color: var(--azul-obscuro);
+  margin-bottom: 8px;
 }
 
 .heroH3 {
   font-family: 'Libertinus Serif', serif !important;
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
+  font-size: 24px;
+  line-height: 30px;
   color: var(--azul-obscuro);
+  max-width: 400px;
+}
+
+.heroH4 {
+  font-family: 'Libertinus Serif', serif !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--azul-obscuro);
+  max-width: 400px;
 }
 
 .heroContainer{
@@ -49,6 +61,7 @@
 .heroText{
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 /* Clases originales comentadas para usar Libertinus Serif */
 /*

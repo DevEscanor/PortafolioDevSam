@@ -7,12 +7,13 @@
   },
   "hero": {
     "title": "Software Architect",
-    "subTitle": "Founder of Veltron Dynamics & Co-founder of Arcadius Nic"
+    "subTitle": "Founder of Veltron Dynamics &",
+    "subTitle2": "Co-founder of Arcadius Nic"
   },
   "about": {
     "text1": "Hello, I am",
     "text2": "I am a computer entrepreneur and in love with technology.",
-    "text3": "I have worked since 2019 as an Architect and Software developer for the",
+    "text3": "I have worked since 2019 as a Software Architect and developer for the",
     "text4": "company of which I am Co-Founder",
     "text5": "My main skills are project architecture and software development focused mainly on Node.js applications.",
     "text6": "Much of my professional career has been dedicated to software oriented to Microfinance, I also carry out these same tasks applied to the design and development of Backend / Frontend."
