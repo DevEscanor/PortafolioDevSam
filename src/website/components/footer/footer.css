@@ -1,13 +1,12 @@
 .footer{
   width: 100%;
-  min-height: 180px;
+  min-height: 200px;
   padding: 40px;
   background: var(--azul-obscuro);
   z-index: 1;
-  /* display: flex; */
-  /* align-items: flex-end; */
-  /* justify-content: center; */
   color: var(--blanco);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 
   display: flex;
   align-items: center;
@@ -22,8 +21,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
-  padding: 40px;
+  padding: 20px;
 }
 .footerText>span{
   font-style: normal;

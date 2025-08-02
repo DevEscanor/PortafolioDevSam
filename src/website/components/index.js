@@ -5,3 +5,4 @@ export * from './navbar/Navbar';
 export * from './sections/AcercaDe';
 export * from './sections/Habilidades';
 export * from './sections/Proyectos';
+export * from './ScrollIndicator';

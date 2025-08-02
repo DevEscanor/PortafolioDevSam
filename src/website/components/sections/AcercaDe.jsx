@@ -29,29 +29,19 @@ export const AcercaDe = () => {
             {/* Hola, soy */}
           {t("about.text1")}
           </h2>
-          <h1 className='h1SectionOne' >
-            David Suarez
-          </h1>
           <p className='parSectionOne'>
           {t("about.text2")}
-            {/* Soy un informático emprendedor y amante de la tecnología. */}
           </p>
           <br />
           <p className='parSectionOne'>
           
-           {t("about.text3")} {/* He trabajado desde 2019 como Arquitecto y desarrollador de Software de la empresa */} <a href='http://www.arcadiusnic.com/' target='_blank' rel="noreferrer"><span className='arcadius'>ARCADIUS</span></a> {t("about.text4")}{/* del cual soy
-            Co-Fundador. */}
+           {t("about.text3")} 
           </p>
           <br />
           <p className='parSectionOne'>
-          {t("about.text5")}
-            {/* Mis principales competencias son la arquitectura de proyectos y el desarrollo de software centrado sobre todo en aplicaciones de Node.js. */}
+          {t("about.text4")}
           </p>
-          <br />
-          <p className='parSectionOne'>
-          {t("about.text6")}
-            {/* Gran parte de mi carrera profesional ha estado dedicada al software orientado a Microfinanzas, también realizo estas mismas labores aplicadas al diseño y desarrollo de Backend / Frontend. */}
-          </p>
+         
         </div>
         <div className={`rightSideSectionOne ${cardIsVisible ? 'show' : 'hidenRight'}`}>
           <img src={sectionOneIMG} alt='' className='rightSideIMGSectionOne' />

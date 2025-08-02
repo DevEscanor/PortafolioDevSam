@@ -4,7 +4,7 @@ import { AiFillGitlab, AiOutlineMail } from 'react-icons/ai';
 
 export const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer id="Footer" className='footer'>
       <ul className='footerList'>
         <li className='footerItem'>
           <a href='https://gitlab.com/ESCANORX' target='_blank' rel="noreferrer">

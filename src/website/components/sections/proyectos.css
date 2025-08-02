@@ -5,6 +5,8 @@
   width: 100%;
   position: relative;
   padding: 40px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 
   /* display: flex; */
   /* align-items: center; */

@@ -11,12 +11,10 @@
     "subTitle2": "Co-founder of Arcadius Nic"
   },
   "about": {
-    "text1": "Hello, I am",
-    "text2": "I am a computer entrepreneur and in love with technology.",
-    "text3": "I have worked since 2019 as a Software Architect and developer for the",
-    "text4": "company of which I am Co-Founder",
-    "text5": "My main skills are project architecture and software development focused mainly on Node.js applications.",
-    "text6": "Much of my professional career has been dedicated to software oriented to Microfinance, I also carry out these same tasks applied to the design and development of Backend / Frontend."
+    "text1": "Welcome,",
+    "text2": "I am David Samuel Suarez Montoya, Founder of Veltron Dynamics and Chief Technology Officer (CTO) and co-founder of ARCADIUS-NIC. Passionate about technology, innovation, and software development, I dedicate my career to designing and leading technical solutions that add real and sustainable value.",
+    "text3": "With over 5 years of experience in the sector, I have been responsible for the architecture and implementation of scalable, robust systems aligned with business strategic objectives.",
+    "text4": "I specialize in transforming complex ideas into functional digital products, always focusing on quality, security, and continuous improvement. My mission is to connect the potential of technology with the growth of people and organizations."
   },
   "skills":{
     "title":"Mastered Technologies"

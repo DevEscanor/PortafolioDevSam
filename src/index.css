@@ -8,18 +8,49 @@
 	padding: 0;
 	box-sizing: border-box;
 	/*	colores y codigo del nuevo diseño */
-  --azul:#1D51FF;
-  --azul-links:#01238E;
-  --azul-obscuro:#1D1E26;
-  --blanco:#ffffff;
-  --verde:#11B53C;
-  --rojo:#da3737;
+  /* Primary Colors */
+  --azul: #2563EB;
+  --azul-links: #1E40AF;
+  --azul-obscuro: #1E293B;
+  --blanco: #ffffff;
+  
+  /* Accent Colors */
+  --verde: #10B981;
+  --rojo: #EF4444;
+  
+  /* Neutral Colors */
+  --gris-claro: #F8FAFC;
+  --gris-medio: #E2E8F0;
+  --gris-oscuro: #64748B;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
+  --gradient-secondary: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -36,12 +67,23 @@ body {
 
 /* Dark mode styles */
 [data-theme="dark"] {
-  --azul: #4A90E2;
-  --azul-links: #6BA5E8;
-  --azul-obscuro: #2C3E50;
-  --blanco: #1A1A1A;
-  --verde: #2ECC71;
-  --rojo: #E74C3C;
+  --azul: #60A5FA;
+  --azul-links: #93C5FD;
+  --azul-obscuro: #0F172A;
+  --blanco: #F8FAFC;
+  
+  /* Accent Colors */
+  --verde: #34D399;
+  --rojo: #F87171;
+  
+  /* Neutral Colors */
+  --gris-claro: #1E293B;
+  --gris-medio: #334155;
+  --gris-oscuro: #94A3B8;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+  --gradient-secondary: linear-gradient(135deg, #34D399 0%, #10B981 100%);
 }
 
 /* Asegurar que el contenido sea visible */
