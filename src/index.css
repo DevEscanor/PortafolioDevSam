@@ -47,6 +47,11 @@ html {
   scroll-padding-top: 70px;
 }
 
+/* Optimizar la velocidad de scroll */
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;

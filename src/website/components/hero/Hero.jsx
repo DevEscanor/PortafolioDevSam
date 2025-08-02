@@ -26,7 +26,7 @@ export const Hero = () => {
             {t("hero.subTitle2")}
           </h4>
         </div>
-        <Link to='AcercaDe' smooth={true} className='linkSvg' >
+        <Link to='AcercaDe' smooth={true} duration={200} offset={-70} className='linkSvg' >
           <IoIosArrowDown className='arrowSvg' />
         </Link>
       </div>

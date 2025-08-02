@@ -26,22 +26,22 @@ function LinkItems({ estadoMiniMenu, cerrarMenu }) {
   return (
     <ul className={estadoMiniMenu ? 'navbarList' : 'navbarListNone'}>
       <li className='navbarItems'  >
-        <Link to="AcercaDe" smooth={true} onClick={handle}>
+        <Link to="AcercaDe" smooth={true} duration={200} offset={-70} onClick={handle}>
           {t("navbar.navlink1")}
         </Link>
       </li>
       <li className='navbarItems'  >
-        <Link to="Habilidades" smooth={true} onClick={handle}>
+        <Link to="Habilidades" smooth={true} duration={200} offset={-70} onClick={handle}>
           {t("navbar.navlink2")}
         </Link>
       </li>
       <li className='navbarItems'  >
-        <Link to="Proyectos" smooth={true} onClick={handle}>
+        <Link to="Proyectos" smooth={true} duration={200} offset={-70} onClick={handle}>
           {t("navbar.navlink3")}
         </Link>
       </li>
       <li className='navbarItems'  >
-        <Link to="Contactanos" smooth={true} onClick={handle}>
+        <Link to="Contactanos" smooth={true} duration={200} offset={-70} onClick={handle}>
           {t("navbar.navlink4")}
         </Link>
       </li>
@@ -70,7 +70,7 @@ export const Navbar = ({ home }) => {
   return (
     <div className='navbarContainer'>
       <div className='navbarWrapper'>
-        <Link to='Hero' smooth={true}>
+        <Link to='Hero' smooth={true} duration={200} offset={-70}>
           <img src={logo} alt='Arcadius logo' className='daviLogo' />
         </Link>
         <LinkItems
