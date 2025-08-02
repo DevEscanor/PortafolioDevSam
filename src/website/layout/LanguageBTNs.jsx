@@ -5,7 +5,7 @@ const LanguageBTNs = (props) => {
 
   const { i18n } = useTranslation();
 
-  const [activar, setActivar] = useState(false);
+  const [activar, setActivar] = useState(i18n.language === "es");
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
