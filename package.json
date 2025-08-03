@@ -2,6 +2,7 @@
   "name": "David Suarez Web Portfolio",
   "version": "0.2.1",
   "private": true,
+  "homepage": "https://devescanor.github.io/PortafolioDevSam/",
   "proxy": "http://localhost:1433/users/",
   "dependencies": {
     "emailjs-com": "^3.2.0",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
