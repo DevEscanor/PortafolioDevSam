@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortafolioDevSam/static/css/main.4b7856a0.css",
-    "main.js": "/PortafolioDevSam/static/js/main.7e1db635.js",
+    "main.js": "/PortafolioDevSam/static/js/main.5ea6b435.js",
     "static/media/daviHero.png": "/PortafolioDevSam/static/media/daviHero.2a29550dc6beb87004d5.png",
     "static/media/000-hotel-san-juan.jpg": "/PortafolioDevSam/static/media/000-hotel-san-juan.39b3dbbedf3cfad0544b.jpg",
     "static/media/pc-icon.png": "/PortafolioDevSam/static/media/pc-icon.149141b8d9796e824de2.png",
@@ -9,10 +9,10 @@
     "static/media/arcadius.jpg": "/PortafolioDevSam/static/media/arcadius.bd04cee2bdfbd0a01991.jpg",
     "index.html": "/PortafolioDevSam/index.html",
     "main.4b7856a0.css.map": "/PortafolioDevSam/static/css/main.4b7856a0.css.map",
-    "main.7e1db635.js.map": "/PortafolioDevSam/static/js/main.7e1db635.js.map"
+    "main.5ea6b435.js.map": "/PortafolioDevSam/static/js/main.5ea6b435.js.map"
   },
   "entrypoints": [
     "static/css/main.4b7856a0.css",
-    "static/js/main.7e1db635.js"
+    "static/js/main.5ea6b435.js"
   ]
 }
