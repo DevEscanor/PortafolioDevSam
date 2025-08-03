@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/PortafolioDevSam/static/css/main.f8125eba.css",
-    "main.js": "/PortafolioDevSam/static/js/main.8dac86d5.js",
+    "main.css": "/PortafolioDevSam/static/css/main.3995aaf6.css",
+    "main.js": "/PortafolioDevSam/static/js/main.2dbab1ee.js",
     "static/media/daviHero.png": "/PortafolioDevSam/static/media/daviHero.2a29550dc6beb87004d5.png",
     "static/media/000-hotel-san-juan.jpg": "/PortafolioDevSam/static/media/000-hotel-san-juan.39b3dbbedf3cfad0544b.jpg",
     "static/media/pc-icon.png": "/PortafolioDevSam/static/media/pc-icon.149141b8d9796e824de2.png",
     "static/media/001-sisprestamos.jpg": "/PortafolioDevSam/static/media/001-sisprestamos.82f261e4b2fbc8457173.jpg",
     "static/media/arcadius.jpg": "/PortafolioDevSam/static/media/arcadius.bd04cee2bdfbd0a01991.jpg",
     "index.html": "/PortafolioDevSam/index.html",
-    "main.f8125eba.css.map": "/PortafolioDevSam/static/css/main.f8125eba.css.map",
-    "main.8dac86d5.js.map": "/PortafolioDevSam/static/js/main.8dac86d5.js.map"
+    "main.3995aaf6.css.map": "/PortafolioDevSam/static/css/main.3995aaf6.css.map",
+    "main.2dbab1ee.js.map": "/PortafolioDevSam/static/js/main.2dbab1ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8125eba.css",
-    "static/js/main.8dac86d5.js"
+    "static/css/main.3995aaf6.css",
+    "static/js/main.2dbab1ee.js"
   ]
 }
