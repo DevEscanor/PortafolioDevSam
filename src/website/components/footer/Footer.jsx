@@ -35,7 +35,22 @@ export const Footer = () => {
         </li>
       </ul>
       <p className='footerText'>
-        Copyright © 2023 <span>David Suarez</span>
+        Copyright © 2024 <span>David Suarez</span> | 
+        <a 
+          href="https://github.com/DevEscanor/PortafolioDevSam/blob/main/LICENSE" 
+          target="_blank" 
+          rel="noreferrer"
+          className="license-link"
+        >
+          MIT License
+        </a>
+        | 
+        <button 
+          onClick={() => document.getElementById('legalModal').style.display = 'block'}
+          className="legal-button"
+        >
+          Información Legal
+        </button>
       </p>
     </footer>
   )

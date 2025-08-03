@@ -30,6 +30,37 @@
   line-height: 21px;
 }
 
+.license-link {
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+}
+
+.license-link:hover {
+  color: var(--verde);
+  text-decoration: underline;
+}
+
+.legal-button {
+  background: none;
+  border: none;
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.legal-button:hover {
+  color: var(--verde);
+  text-decoration: underline;
+}
+
 .footerList{
 list-style: none;
   display: flex;

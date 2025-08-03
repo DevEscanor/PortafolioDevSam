@@ -1,5 +1,5 @@
 import './home.css'
-import { Contact, Footer, Hero, Navbar, AcercaDe, Proyectos, Habilidades, ScrollIndicator } from '../../components/';
+import { Contact, Footer, Hero, Navbar, AcercaDe, Proyectos, Habilidades, ScrollIndicator, Legal } from '../../components/';
 import { ScrollTopButton } from '../../assets/';
 import { useScrollSnap } from '../../../hooks/useScrollSnap';
 
@@ -17,6 +17,7 @@ export const Home = () => {
       <Contact />
       <ScrollTopButton />
       <Footer />
+      <Legal />
     </div>
   )
 };
