@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 // import { useTranslation } from 'react-i18next'; // Will be used for future translations
 import './legal.css';
 
 export const Legal = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  // const [isVisible, setIsVisible] = useState(false); // Will be used for future improvements
 
   const closeModal = () => {
-    setIsVisible(false);
+    // setIsVisible(false); // Will be used for future improvements
     const modal = document.getElementById('legalModal');
     if (modal) {
       modal.style.display = 'none';
@@ -24,7 +24,7 @@ export const Legal = () => {
     const checkModalState = () => {
       const modal = document.getElementById('legalModal');
       if (modal && modal.style.display === 'block') {
-        setIsVisible(true);
+        // setIsVisible(true); // Will be used for future improvements
       }
     };
 
