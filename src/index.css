@@ -52,6 +52,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Mejorar la experiencia de scroll */
+body {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Para iOS */
+}
+
 body {
   overflow-x: hidden;
   margin: 0;

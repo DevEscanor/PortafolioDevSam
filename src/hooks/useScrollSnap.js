@@ -4,33 +4,48 @@ export const useScrollSnap = () => {
   useEffect(() => {
     let isScrolling = false;
     let scrollTimeout;
+    let lastScrollTime = 0;
+    const scrollThreshold = 100; // Umbral mínimo para activar scroll snapping
+    const scrollCooldown = 500; // Tiempo de espera entre scrolls
 
     const getCurrentSection = () => {
       const sections = document.querySelectorAll('section[id]');
       const footer = document.querySelector('footer[id]');
       const navbarHeight = 70;
+      const viewportHeight = window.innerHeight;
       
-      // Primero buscar en las secciones
-      const currentSection = Array.from(sections).find(section => {
+      // Buscar la sección más visible en el viewport
+      let bestSection = null;
+      let bestVisibility = 0;
+      
+      sections.forEach(section => {
         const rect = section.getBoundingClientRect();
-        return rect.top <= navbarHeight + 50 && rect.bottom >= navbarHeight + 50;
+        const visibleHeight = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
+        const visibility = visibleHeight / Math.min(rect.height, viewportHeight);
+        
+        if (visibility > bestVisibility && visibility > 0.3) {
+          bestVisibility = visibility;
+          bestSection = section;
+        }
       });
       
-      // Si no hay sección actual, verificar si estamos en el footer
-      if (!currentSection && footer) {
+      // Si no hay sección visible, verificar el footer
+      if (!bestSection && footer) {
         const footerRect = footer.getBoundingClientRect();
-        if (footerRect.top <= navbarHeight + 50) {
+        if (footerRect.top <= navbarHeight + 100) {
           return footer;
         }
       }
       
-      return currentSection;
+      return bestSection;
     };
 
     const scrollToSection = (direction) => {
-      if (isScrolling) return;
+      const now = Date.now();
+      if (isScrolling || (now - lastScrollTime) < scrollCooldown) return;
       
       isScrolling = true;
+      lastScrollTime = now;
       
       const sections = document.querySelectorAll('section[id]');
       const footer = document.querySelector('footer[id]');
@@ -45,14 +60,12 @@ export const useScrollSnap = () => {
       let targetSection;
       
       if (direction === 'down') {
-        // Si estamos en la última sección, ir al footer
         if (currentIndex === sections.length - 1) {
           targetSection = footer;
         } else {
           targetSection = sections[currentIndex + 1];
         }
       } else {
-        // Si estamos en el footer, ir a la última sección
         if (currentSection === footer) {
           targetSection = sections[sections.length - 1];
         } else {
@@ -73,13 +86,20 @@ export const useScrollSnap = () => {
       clearTimeout(scrollTimeout);
       scrollTimeout = setTimeout(() => {
         isScrolling = false;
-      }, 800);
+      }, 600);
     };
 
     const handleWheel = (e) => {
-      e.preventDefault();
+      // Solo activar en desktop y cuando el scroll sea significativo
+      if (window.innerWidth <= 768) return;
       
-      if (Math.abs(e.deltaY) < 50) return; // Ignorar scrolls muy pequeños
+      const deltaY = Math.abs(e.deltaY);
+      if (deltaY < scrollThreshold) return;
+      
+      // Permitir scroll natural para movimientos pequeños
+      if (deltaY < 150) return;
+      
+      e.preventDefault();
       
       if (e.deltaY > 0) {
         scrollToSection('down');
@@ -98,6 +118,7 @@ export const useScrollSnap = () => {
           scrollToSection('up');
         }
       }
+    };
     };
 
     // Solo activar en desktop

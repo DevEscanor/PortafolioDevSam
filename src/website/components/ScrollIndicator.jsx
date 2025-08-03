@@ -10,26 +10,48 @@ export const ScrollIndicator = () => {
       const sections = document.querySelectorAll('section[id]');
       const footer = document.querySelector('footer[id]');
       const navbarHeight = 70;
+      const viewportHeight = window.innerHeight;
       
-      // Buscar en las secciones primero
-      const currentSectionIndex = Array.from(sections).findIndex(section => {
+      // Buscar la sección más visible en el viewport
+      let bestSectionIndex = -1;
+      let bestVisibility = 0;
+      
+      sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
-        return rect.top <= navbarHeight + 100 && rect.bottom >= navbarHeight + 100;
+        const visibleHeight = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
+        const visibility = visibleHeight / Math.min(rect.height, viewportHeight);
+        
+        if (visibility > bestVisibility && visibility > 0.3) {
+          bestVisibility = visibility;
+          bestSectionIndex = index;
+        }
       });
       
-      if (currentSectionIndex !== -1) {
-        setCurrentSection(currentSectionIndex);
+      if (bestSectionIndex !== -1) {
+        setCurrentSection(bestSectionIndex);
       } else if (footer) {
-        // Si no estamos en una sección, verificar si estamos en el footer
+        // Si no hay sección visible, verificar el footer
         const footerRect = footer.getBoundingClientRect();
         if (footerRect.top <= navbarHeight + 100) {
-          setCurrentSection(-1); // No mostrar punto activo cuando estés en el footer
+          setCurrentSection(-1);
         }
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Usar throttling para mejorar el rendimiento
+    let ticking = false;
+    const throttledHandleScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', throttledHandleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', throttledHandleScroll);
   }, []);
 
   return (
@@ -53,4 +75,5 @@ export const ScrollIndicator = () => {
       ))}
     </div>
   );
+}; 
 }; 
