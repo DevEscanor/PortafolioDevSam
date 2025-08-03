@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f8125eba.css",
+    "main.js": "/static/js/main.2da8b6bf.js",
+    "static/media/daviHero.png": "/static/media/daviHero.2a29550dc6beb87004d5.png",
+    "static/media/000-hotel-san-juan.jpg": "/static/media/000-hotel-san-juan.39b3dbbedf3cfad0544b.jpg",
+    "static/media/pc-icon.png": "/static/media/pc-icon.149141b8d9796e824de2.png",
+    "static/media/001-sisprestamos.jpg": "/static/media/001-sisprestamos.82f261e4b2fbc8457173.jpg",
+    "static/media/arcadius.jpg": "/static/media/arcadius.bd04cee2bdfbd0a01991.jpg",
+    "index.html": "/index.html",
+    "main.f8125eba.css.map": "/static/css/main.f8125eba.css.map",
+    "main.2da8b6bf.js.map": "/static/js/main.2da8b6bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8125eba.css",
+    "static/js/main.2da8b6bf.js"
+  ]
+}
