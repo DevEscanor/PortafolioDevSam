@@ -3,7 +3,6 @@
   "version": "0.2.1",
   "private": true,
   "homepage": "https://devescanor.github.io/PortafolioDevSam/",
-  "proxy": "http://localhost:1433/users/",
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",

@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import { Formik } from "formik";
 import emailjs from 'emailjs-com';
 import { FaInfoCircle } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next';
+import { emailjsConfig } from '../../../config/emailjs';
 import './contact.css';
 import { useTranslation } from "react-i18next";
 
@@ -47,7 +49,12 @@ export const Contact = () => {
             setTimeout(() => setFormSent(false), 5000)
 
             //El envia del correo con emailjs.
-            emailjs.sendForm('service_ubwrvbp', 'template_jxwbzcl', form.current, 'qkRqCIXlHbHdQXhvL')
+            emailjs.sendForm(
+              emailjsConfig.serviceId,
+              emailjsConfig.templateId,
+              form.current,
+              emailjsConfig.userId
+            )
               .then((result) => {
                 console.log(result.text);
               }, (error) => {
