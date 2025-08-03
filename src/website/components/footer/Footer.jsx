@@ -46,7 +46,15 @@ export const Footer = () => {
         </a>
         | 
         <button 
-          onClick={() => document.getElementById('legalModal').style.display = 'block'}
+          onClick={() => {
+            const modal = document.getElementById('legalModal');
+            if (modal) {
+              modal.style.display = 'block';
+              console.log('Modal opened'); // Debug
+            } else {
+              console.log('Modal not found'); // Debug
+            }
+          }}
           className="legal-button"
         >
           Información Legal

@@ -3,15 +3,27 @@ import React from 'react';
 import './legal.css';
 
 export const Legal = () => {
+  const closeModal = () => {
+    const modal = document.getElementById('legalModal');
+    if (modal) {
+      modal.style.display = 'none';
+    }
+  };
+
+  const handleModalClick = (e) => {
+    if (e.target.id === 'legalModal') {
+      closeModal();
+    }
+  };
 
   return (
-    <div className="legal-modal" id="legalModal">
+    <div className="legal-modal" id="legalModal" onClick={handleModalClick}>
       <div className="legal-content">
         <div className="legal-header">
           <h2>📄 Información Legal</h2>
           <button 
             className="legal-close"
-            onClick={() => document.getElementById('legalModal').style.display = 'none'}
+            onClick={closeModal}
           >
             ×
           </button>
