@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import { useTranslation } from 'react-i18next'; // Will be used for future translations
 import './legal.css';
 
 export const Legal = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   const closeModal = () => {
+    setIsVisible(false);
     const modal = document.getElementById('legalModal');
     if (modal) {
       modal.style.display = 'none';
@@ -15,6 +18,21 @@ export const Legal = () => {
       closeModal();
     }
   };
+
+  // Escuchar cambios en el estado global
+  useEffect(() => {
+    const checkModalState = () => {
+      const modal = document.getElementById('legalModal');
+      if (modal && modal.style.display === 'block') {
+        setIsVisible(true);
+      }
+    };
+
+    // Verificar cada 100ms
+    const interval = setInterval(checkModalState, 100);
+    
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="legal-modal" id="legalModal" onClick={handleModalClick}>
