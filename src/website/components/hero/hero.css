@@ -51,8 +51,6 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
 }
 
 /* Efectos de fondo removidos para mantener el diseño limpio */
@@ -64,9 +62,58 @@
   align-items: center;
   justify-content: center;
   gap:150px;
+  padding: 0 80px;
   position: relative;
   background:var(--blanco);
   transition: all 0.3s ease;
+}
+
+/* Hero centrado - nuevo diseño */
+.heroCentered {
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+.heroCentered .heroText {
+  align-items: center;
+  max-width: 600px;
+}
+
+.heroCentered .heroH3,
+.heroCentered .heroH4 {
+  max-width: 500px;
+}
+
+/* Hero minimalista - sin foto */
+.heroMinimal {
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.heroMinimal .heroText {
+  align-items: center;
+  max-width: 700px;
+}
+
+.heroMinimal .heroH1 {
+  font-size: 72px;
+  line-height: 88px;
+  margin-bottom: 20px;
+}
+
+.heroMinimal .heroH2 {
+  font-size: 52px;
+  line-height: 62px;
+  margin-bottom: 15px;
+}
+
+.heroMinimal .heroH3,
+.heroMinimal .heroH4 {
+  max-width: 600px;
+  font-size: 28px;
+  line-height: 34px;
 }
 
 /* Dark mode hero wrapper */
@@ -89,7 +136,8 @@
   box-shadow: 0 25px 50px rgba(0,0,0,0.6);
 }
 .heroPhoto{
-  height: 340px;
+  height: 320px;
+  width: auto;
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-xl);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -209,92 +257,187 @@ line-height: 37px;
   }
 }
 
-@media (max-width: 770px){
-  .heroTexth1{
-
-    margin-left: 40px;
-    font-size: 38px;
-    line-height: unset;
-  }
-  .heroTextEnfasis{
-    font-size: 50px;
-    line-height: unset;
-  }
-  .heroBtn{
-    margin: 20px 40px;
-    font-size: 22px;
-    line-height: unset;
-    width: unset;
-  }
-}
 @media (max-width: 1024px){
   .heroWrapper{
-    gap:20px;
-    margin-top: 40px;
+    gap: 80px;
+    padding: 0 40px;
+  }
+  
+  .heroH1{
+    font-size: 56px;
+    line-height: 68px;
+  }
+  
+  .heroH2{
+    font-size: 38px;
+    line-height: 46px;
+  }
+  
+  .heroH3,
+  .heroH4{
+    font-size: 22px;
+    line-height: 28px;
   }
 }
+
 @media (max-width: 990px){
   .heroContainer{
-    /* height: 90vh; */
-    margin-top: unset;
+    height: 100vh;
   }
+  
+  .heroWrapper{
+    gap: 60px;
+    padding: 0 30px;
+  }
+  
   .heroPhoto{
-    height: 400px;
+    height: 280px;
+  }
+  
+  .heroH1{
+    font-size: 48px;
+    line-height: 58px;
+  }
+  
+  .heroH2{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .heroH3,
+  .heroH4{
+    font-size: 20px;
+    line-height: 26px;
   }
 }
-@media (max-width: 770px){
+
+@media (max-width: 768px){
+  .heroContainer{
+    height: 100vh;
+    padding-top: 70px;
+  }
+  
   .heroWrapper{
     flex-direction: column;
-    margin-top: unset;
-    gap: 40px;
+    gap: 30px;
     padding: 20px;
+    justify-content: center;
+    text-align: center;
   }
-  .linkSvg{
-    margin-bottom: 10px;
+  
+  .heroPhoto{
+    height: 250px;
+    order: 1;
   }
-
+  
   .heroText{
+    order: 2;
     width: 100%;
     align-items: center;
+    gap: 6px;
   }
-
+  
   .heroH1{
-    font-size: 44px;
-    line-height: unset;
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
   }
+  
   .heroH2{
-    font-size: 30px;
-    line-height: unset;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
   }
-  .heroH3{
-    font-size: 20px;
-    line-height: unset;
+  
+  .heroH3,
+  .heroH4{
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  .linkSvg{
+    bottom: 20px;
+    margin-bottom: 0;
+  }
+  
+  .arrowSvg{
+    height: 40px;
+    width: 40px;
   }
 }
-@media (max-width: 550px){
+
+@media (max-width: 480px){
   .heroContainer{
-    height: 90vh;
+    height: 100vh;
+    padding-top: 60px;
   }
+  
+  .heroWrapper{
+    gap: 25px;
+    padding: 15px;
+  }
+  
   .heroPhoto{
-    height: unset;
-    width: 90vw;
+    height: 200px;
   }
-
-  .heroText{
-    width: 100%;
-    align-items: center;
-  }
-
+  
   .heroH1{
-    font-size: 44px;
-    line-height: unset;
+    font-size: 36px;
+    line-height: 42px;
   }
+  
   .heroH2{
-    font-size: 30px;
-    line-height: unset;
+    font-size: 24px;
+    line-height: 30px;
   }
-  .heroH3{
-    font-size: 20px;
-    line-height: unset;
+  
+  .heroH3,
+  .heroH4{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .arrowSvg{
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media (max-width: 360px){
+  .heroContainer{
+    height: 100vh;
+    padding-top: 50px;
+  }
+  
+  .heroWrapper{
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .heroPhoto{
+    height: 180px;
+  }
+  
+  .heroH1{
+    font-size: 32px;
+    line-height: 38px;
+  }
+  
+  .heroH2{
+    font-size: 22px;
+    line-height: 28px;
+  }
+  
+  .heroH3,
+  .heroH4{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .arrowSvg{
+    height: 30px;
+    width: 30px;
   }
 }
