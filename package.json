@@ -1,12 +1,12 @@
 {
-  "name": "david-suarez-portfolio",
+  "name": "David Suarez Web Portfolio",
   "version": "0.2.1",
   "private": true,
-  "homepage": "https://devescanor.github.io/PortafolioDevSam",
   "proxy": "http://localhost:1433/users/",
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
+    "gh-pages": "^6.3.0",
     "i18next": "^22.4.9",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
