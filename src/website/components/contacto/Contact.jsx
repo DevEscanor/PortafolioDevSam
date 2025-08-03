@@ -5,7 +5,6 @@ import { FaInfoCircle } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next';
 import { emailjsConfig } from '../../../config/emailjs';
 import './contact.css';
-import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
   const { t } = useTranslation();
