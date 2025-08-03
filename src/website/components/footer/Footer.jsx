@@ -1,8 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './footer.css'
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   const openModal = () => {
     setTimeout(() => {
       const modal = document.getElementById('legalModal');
@@ -20,7 +23,7 @@ export const Footer = () => {
       <div className="footer-content">
         {/* Sección de Redes Sociales */}
         <div className="social-section">
-          <h3>Conecta conmigo</h3>
+          <h3>{t('footer.connectTitle')}</h3>
           <div className="social-links">
             <a 
               href='https://www.linkedin.com/in/david-samuel-suarez-montoya-242059150/' 
@@ -61,13 +64,13 @@ export const Footer = () => {
               rel="noreferrer"
               className="license-link"
             >
-              📄 MIT License
+              {t('footer.mitLicense')}
             </a>
             <button 
               onClick={openModal}
               className="legal-button"
             >
-              📋 Información Legal
+              {t('footer.legalInfo')}
             </button>
           </div>
         </div>
@@ -75,10 +78,10 @@ export const Footer = () => {
         {/* Copyright */}
         <div className="copyright-section">
           <p className='copyright-text'>
-            © 2024 <strong>David Suárez</strong> - Software Architect & Full Stack Developer
+            {t('footer.copyright')}
           </p>
           <p className="footer-subtitle">
-            Founder of Veltron Dynamics & Co-founder of Arcadius Nic
+            {t('footer.subtitle')}
           </p>
         </div>
       </div>
