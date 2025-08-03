@@ -5,7 +5,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-3.0-orange.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![HTML5](https://img.shields.io/badge/HTML5-5.0-red.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-brightgreen.svg)](https://devescanor.github.io/PortafolioDevSam/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <div align="center">
   <img src="public/favicon.ico" alt="Portfolio Logo" width="100" height="100">
