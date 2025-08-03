@@ -1,9 +1,8 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next'; // Will be used for future translations
 import './legal.css';
 
 export const Legal = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="legal-modal" id="legalModal">
