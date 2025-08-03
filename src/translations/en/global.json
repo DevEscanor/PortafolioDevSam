@@ -8,33 +8,88 @@
   "hero": {
     "title": "Software Architect",
     "subTitle": "Founder of Veltron Dynamics &",
-    "subTitle2": "Co-founder of Arcadius Nic"
+    "subTitle2": "Co-founder of Arcadius Nic",
+    "scrollText": "Scroll to explore"
   },
   "about": {
     "text1": "Welcome,",
-    "text2": "I am David Samuel Suarez Montoya, Founder of Veltron Dynamics and Chief Technology Officer (CTO) and co-founder of ARCADIUS-NIC. Passionate about technology, innovation, and software development, I dedicate my career to designing and leading technical solutions that add real and sustainable value.",
+    "text2": "I am David Samuel Suárez Montoya, Founder of Veltron Dynamics and Chief Technology Officer (CTO) and co-founder of ARCADIUS-NIC. Passionate about technology, innovation, and software development, I dedicate my career to designing and leading technical solutions that add real and sustainable value.",
     "text3": "With over 5 years of experience in the sector, I have been responsible for the architecture and implementation of scalable, robust systems aligned with business strategic objectives.",
     "text4": "I specialize in transforming complex ideas into functional digital products, always focusing on quality, security, and continuous improvement. My mission is to connect the potential of technology with the growth of people and organizations."
   },
-  "skills":{
-    "title":"Mastered Technologies"
+  "skills": {
+    "title": "Mastered Technologies",
+    "subtitle": "Complete development stack"
   },
-  "projects":{
-    "title":"Projects",
-    "card1Title":"San Juan Hotel",
-    "card1Content":"We created a Web App for room reservations with a Dashboard for managing reservations and staff.",
-    "card2Title":"Sisprestamos",
-    "card2Content":"System that allows carrying out portfolio and personnel control at the time of disbursing the credits applied to microfinance institutions.",
-    "card3Title":"Arcadius",
-    "card3Content":"Main site of the Arcadius website"
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Recent and relevant work",
+    "card1Title": "San Juan Hotel",
+    "card1Content": "We developed a complete web application for room reservations with an administrative dashboard to manage reservations, staff, and real-time statistics.",
+    "card2Title": "Sisprestamos",
+    "card2Content": "Comprehensive financial management system that enables portfolio and personnel control during the credit disbursement process for microfinance institutions.",
+    "card3Title": "Arcadius",
+    "card3Content": "Main corporate website of Arcadius with modern design, advanced functionalities, and conversion optimization.",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
   },
   "contact": {
     "mainTitle": "Let's stay in touch!",
-    "buttonSend": "Send!",
-    "buttonSent": "Your message has been Sent!",
+    "subtitle": "Have a project in mind? Let's talk",
+    "namePlaceholder": "Full name",
+    "emailPlaceholder": "Email address",
+    "subjectPlaceholder": "Subject",
+    "messagePlaceholder": "Your message",
+    "buttonSend": "Send Message",
+    "buttonSent": "Message Sent!",
     "errorName": "Please enter your full name",
-    "errorName2": "You are only allowed to add letters and spaces",
-    "errorEmail": "Please enter an email address",
-    "errorEmail2": "Your email is only allowed to have letters, numbers, periods, hyphens, and underscores"
+    "errorName2": "Only letters and spaces are allowed",
+    "errorEmail": "Please enter a valid email address",
+    "errorEmail2": "Invalid email format",
+    "errorSubject": "Please enter a subject",
+    "errorMessage": "Please enter your message"
+  },
+  "footer": {
+    "connectTitle": "Connect with me",
+    "copyright": "© 2024 David Suárez - Software Architect & Full Stack Developer",
+    "subtitle": "Founder of Veltron Dynamics & Co-founder of Arcadius Nic",
+    "mitLicense": "📄 MIT License",
+    "legalInfo": "📋 Legal Information"
+  },
+  "legal": {
+    "title": "Legal Information",
+    "mitSection": {
+      "title": "📋 MIT License",
+      "description": "This project is under the MIT License. This means you can:",
+      "permissions": [
+        "Use the code freely",
+        "Modify and adapt the code",
+        "Distribute the code",
+        "Use commercially"
+      ],
+      "requirement": "Requirement: Maintain the copyright notice and original license.",
+      "viewLicense": "View Full License →"
+    },
+    "privacySection": {
+      "title": "🔒 Privacy",
+      "description": "This website does not collect personal information except through the contact form, which uses EmailJS to send messages. We do not store personal data."
+    },
+    "contactSection": {
+      "title": "📧 Contact Form",
+      "description": "The contact form uses EmailJS to send messages. The information sent is processed solely to respond to your inquiry."
+    },
+    "techSection": {
+      "title": "🌐 Technologies Used",
+      "description": "This site uses React, EmailJS, and other open source technologies. All dependencies have their own licenses that we respect."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
   }
 }

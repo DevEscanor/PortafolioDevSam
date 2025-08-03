@@ -1,40 +1,95 @@
 {
-  "navbar":{
-    "navlink1":"Acerca de",
-    "navlink2":"Habilidades",
-    "navlink3":"Proyectos",
-    "navlink4":"Contacto"
+  "navbar": {
+    "navlink1": "Acerca de",
+    "navlink2": "Habilidades",
+    "navlink3": "Proyectos",
+    "navlink4": "Contacto"
   },
-  "hero":{
-    "title":"Arquitecto de Software",
-    "subTitle":"Fundador de Veltron Dynamics &",
-    "subTitle2":"Co-fundador de Arcadius Nic"
+  "hero": {
+    "title": "Arquitecto de Software",
+    "subTitle": "Fundador de Veltron Dynamics &",
+    "subTitle2": "Co-fundador de Arcadius Nic",
+    "scrollText": "Desplázate para explorar"
   },
-  "about":{
-    "text1":"Bienvenido,",
-    "text2":"Soy David Samuel Suarez Montoya,Fundador de Veltron Dynamics y Chief Technology Officer (CTO) y cofundador de ARCADIUS-NIC. Apasionado por la tecnología, la innovación y el desarrollo de software, dedico mi carrera a diseñar y liderar soluciones técnicas que agregan valor real y sostenible.",
-    "text3":"Con más de 5 años de experiencia en el sector, he sido responsable de la arquitectura y la implementación de sistemas escalables, robustos y alineados a los objetivos estratégicos de negocios.",
-    "text4":"Me especializo en transformar ideas complejas en productos digitales funcionales, manteniendo siempre un enfoque en la calidad, la seguridad y la mejora continua. Mi misión es conectar el potencial de la tecnología con el crecimiento de las personas y las organizaciones."
+  "about": {
+    "text1": "Bienvenido,",
+    "text2": "Soy David Samuel Suárez Montoya, Fundador de Veltron Dynamics y Chief Technology Officer (CTO) y cofundador de ARCADIUS-NIC. Apasionado por la tecnología, la innovación y el desarrollo de software, dedico mi carrera a diseñar y liderar soluciones técnicas que agregan valor real y sostenible.",
+    "text3": "Con más de 5 años de experiencia en el sector, he sido responsable de la arquitectura y la implementación de sistemas escalables, robustos y alineados a los objetivos estratégicos de negocios.",
+    "text4": "Me especializo en transformar ideas complejas en productos digitales funcionales, manteniendo siempre un enfoque en la calidad, la seguridad y la mejora continua. Mi misión es conectar el potencial de la tecnología con el crecimiento de las personas y las organizaciones."
   },
-  "skills":{
-    "title":"Stack de Tecnologías dominadas"
+  "skills": {
+    "title": "Tecnologías Dominadas",
+    "subtitle": "Stack completo de desarrollo"
   },
-  "projects":{
-    "title":"Proyectos",
-    "card1Title":"Hotel San Juan",
-    "card1Content":"Creamos una Web App de reserva de habitaciones con un Dashboard para la administración de las reservas y el personal.",
-    "card2Title":"Sisprestamos",
-    "card2Content":"Sistema que permite llevar el control de cartera y personal al momento de desembolsar los créditos aplicado a microfinancieras",
-    "card3Title":"Arcadius",
-    "card3Content":"Sitio principal del website Arcadius"
+  "projects": {
+    "title": "Proyectos Destacados",
+    "subtitle": "Trabajos recientes y relevantes",
+    "card1Title": "Hotel San Juan",
+    "card1Content": "Desarrollamos una aplicación web completa para reservas de habitaciones con un dashboard administrativo para gestionar reservas, personal y estadísticas en tiempo real.",
+    "card2Title": "Sisprestamos",
+    "card2Content": "Sistema integral de gestión financiera que permite el control de cartera y personal durante el proceso de desembolso de créditos para instituciones microfinancieras.",
+    "card3Title": "Arcadius",
+    "card3Content": "Sitio web corporativo principal de Arcadius con diseño moderno, funcionalidades avanzadas y optimización para conversiones.",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código"
   },
   "contact": {
     "mainTitle": "¡Estemos en contacto!",
-    "buttonSend": "¡Enviar!",
+    "subtitle": "¿Tienes un proyecto en mente? Hablemos",
+    "namePlaceholder": "Nombre completo",
+    "emailPlaceholder": "Correo electrónico",
+    "subjectPlaceholder": "Asunto",
+    "messagePlaceholder": "Tu mensaje",
+    "buttonSend": "Enviar Mensaje",
     "buttonSent": "¡Mensaje Enviado!",
     "errorName": "Por favor ingrese su nombre completo",
-    "errorName2": "Solo tiene permitido agregar letras y espacios",
-    "errorEmail": "Por favor ingrese una dirección de correo electrónico",
-    "errorEmail2": "Su correo solo tiene permitido tener letras, números, puntos, guiones y guiones bajos"
+    "errorName2": "Solo se permiten letras y espacios",
+    "errorEmail": "Por favor ingrese una dirección de correo electrónico válida",
+    "errorEmail2": "Formato de correo electrónico inválido",
+    "errorSubject": "Por favor ingrese un asunto",
+    "errorMessage": "Por favor ingrese su mensaje"
+  },
+  "footer": {
+    "connectTitle": "Conecta conmigo",
+    "copyright": "© 2024 David Suárez - Arquitecto de Software & Desarrollador Full Stack",
+    "subtitle": "Fundador de Veltron Dynamics & Co-fundador de Arcadius Nic",
+    "mitLicense": "📄 Licencia MIT",
+    "legalInfo": "📋 Información Legal"
+  },
+  "legal": {
+    "title": "Información Legal",
+    "mitSection": {
+      "title": "📋 Licencia MIT",
+      "description": "Este proyecto está bajo la Licencia MIT. Esto significa que puedes:",
+      "permissions": [
+        "Usar el código libremente",
+        "Modificar y adaptar el código",
+        "Distribuir el código",
+        "Usar comercialmente"
+      ],
+      "requirement": "Requisito: Mantener el aviso de copyright y la licencia original.",
+      "viewLicense": "Ver Licencia Completa →"
+    },
+    "privacySection": {
+      "title": "🔒 Privacidad",
+      "description": "Este sitio web no recopila información personal excepto a través del formulario de contacto, que utiliza EmailJS para enviar mensajes. No almacenamos datos personales."
+    },
+    "contactSection": {
+      "title": "📧 Formulario de Contacto",
+      "description": "El formulario de contacto utiliza EmailJS para enviar mensajes. La información enviada se procesa únicamente para responder a tu consulta."
+    },
+    "techSection": {
+      "title": "🌐 Tecnologías Utilizadas",
+      "description": "Este sitio utiliza React, EmailJS, y otras tecnologías open source. Todas las dependencias tienen sus propias licencias que respetamos."
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "close": "Cerrar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior"
   }
 }
