@@ -35,7 +35,7 @@ export const Footer = () => {
           <h3 className="footer-subtitle">{t("footer.connectTitle")}</h3>
           <div className="social-links">
             <a 
-              href="https://linkedin.com/in/tu-perfil" 
+              href="https://www.linkedin.com/in/david-samuel-suarez-montoya-242059150" 
               target='_blank' 
               rel="noreferrer"
               className="social-link"
