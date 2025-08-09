@@ -4,8 +4,8 @@ import { DiDotnet } from 'react-icons/di';
 import { GoDatabase } from 'react-icons/go';
 import { AiFillGithub, AiFillGitlab } from 'react-icons/ai';
 import { IoInfiniteSharp } from 'react-icons/io5';
-import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaGitAlt, FaNodeJs, /*FaDatabase,*/ FaDocker } from 'react-icons/fa';
-import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, /*SiKubernetes,  SiMicrosoftaccess ,*/ SiMongodb, SiMysql, SiNestjs, SiPostgresql, SiTypescript } from 'react-icons/si';
+import { FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaGitAlt, FaNodeJs, /*FaDatabase,*/ FaDocker, FaProjectDiagram, FaBrain, FaServer, FaPython } from 'react-icons/fa';
+import { SiAdonisjs, SiExpress, SiHeroku, SiJavascript, /*SiKubernetes,  SiMicrosoftaccess ,*/ SiMongodb, SiMysql, SiNestjs, SiPostgresql, SiTypescript, SiGraphql, SiJest, SiTailwindcss } from 'react-icons/si';
 import './habilidades.css';
 
 const icons = [
@@ -14,6 +14,8 @@ const icons = [
   <AiFillGitlab />,
   <AiFillGithub />,
   <FaDocker />,
+  <SiHeroku />,
+  <FaServer />,
   <GoDatabase />,
   <SiMysql />,
   <SiPostgresql />,
@@ -21,15 +23,21 @@ const icons = [
   <DiDotnet />,
   <SiJavascript />,
   <SiTypescript />,
+  <FaPython />,
   <FaNodeJs />,
   <SiExpress />,
   <SiAdonisjs />,
   <SiNestjs />,
+  <SiGraphql />,
   <FaReact />,
+  <FaReact />,
+  <SiJest />,
   <FaHtml5 />,
   <FaCss3Alt />,
   <FaBootstrap />,
-  <SiHeroku />,
+  <SiTailwindcss />,
+  <FaProjectDiagram />,
+  <FaBrain />,
 ]
 
 const nameIcons = [
@@ -38,6 +46,8 @@ const nameIcons = [
   "GitLab",
   "GitHub",
   "Docker Products",
+  "Heroku",
+  "Microservices",
   "Microsoft SQL Server",
   "MySQL",
   "PostgreSQL",
@@ -45,15 +55,21 @@ const nameIcons = [
   "Visual Basic",
   "Javascript",
   "Typescript",
+  "Python",
   "NodeJs",
   "Express",
   "AdonisJs",
   "Nestjs",
+  "GraphQL",
   "React",
+  "React Native",
+  "Jest",
   "HTML5",
   "CSS3",
   "Bootstrap",
-  "Heroku",
+  "Tailwind CSS",
+  "N8N",
+  "AI Tools",
 ]
 
 export const Habilidades = () => {

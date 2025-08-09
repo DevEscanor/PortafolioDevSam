@@ -38,7 +38,7 @@ export const Proyectos = () => {
       </div>
       <div className='Section2Wrapper' ref={refProyects}>
         {cardsProjects.slice(0).map(cardTwo => (
-          <a href={cardTwo.url} className={`linkCard ${cardProyectIsVisible ? 'show' : 'hiden'}`} target="_blank" rel="noreferrer" key={cardTwo.id * 9999}>
+          <div className={`linkCard ${cardProyectIsVisible ? 'show' : 'hiden'}`} key={cardTwo.id * 9999}>
             <div className='section2CardsContainer' >
               <img src={cardTwo.img} alt={cardTwo.title} className='section2IMG' />
               <div key={cardTwo.id} className='section2CardTexts'>
@@ -52,7 +52,7 @@ export const Proyectos = () => {
                 </p>
               </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
     </section>

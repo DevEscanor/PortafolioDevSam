@@ -1,9 +1,9 @@
-export * from './contacto/Contact';
-export * from './footer/Footer';
-export * from './hero/Hero';
-export * from './navbar/Navbar';
-export * from './sections/AcercaDe';
-export * from './sections/Habilidades';
-export * from './sections/Proyectos';
-export * from './ScrollIndicator';
-export * from './legal/Legal';
+export { AcercaDe } from './sections/AcercaDe';
+export { Habilidades } from './sections/Habilidades';
+export { Proyectos } from './sections/Proyectos';
+export { Contact } from './contacto/Contact';
+export { Footer } from './footer/Footer';
+export { Hero } from './hero/Hero';
+export { Navbar } from './navbar/Navbar';
+export { ScrollIndicator } from './ScrollIndicator';
+export { Legal } from './legal/Legal';

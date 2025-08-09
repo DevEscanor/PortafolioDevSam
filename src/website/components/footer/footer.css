@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 300px;
   padding: 60px 40px 40px 40px;
-  background: var(--gradient-primary);
+  background: #1a1a2e;
   color: var(--blanco);
   position: relative;
   overflow: hidden;
@@ -15,7 +15,23 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: #374151; /* Gris moderno */
+  z-index: 1;
+}
+
+/* Add color transition at the top */
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(180deg, 
+    var(--bg-dark) 0%, 
+    rgba(13, 17, 23, 0.8) 50%,
+    transparent 100%);
+  pointer-events: none;
   z-index: 1;
 }
 

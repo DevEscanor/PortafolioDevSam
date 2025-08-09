@@ -257,7 +257,7 @@ SOFTWARE.
 
 ### **David Suárez**
 - 🌐 **Portfolio**: [https://devescanor.github.io/PortafolioDevSam/](https://devescanor.github.io/PortafolioDevSam/)
-- 📧 **Email**: [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com)
+- 📧 **Email**: [devsamsuarez@gmail.com](mailto:devsamsuarez@gmail.com)
 - 💼 **LinkedIn**: [David Suárez](https://linkedin.com/in/tu-perfil)
 - 🐙 **GitHub**: [@DevEscanor](https://github.com/DevEscanor)
 

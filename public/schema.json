@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "David Suárez",
+  "jobTitle": "Arquitecto de Software & Full Stack Developer",
+  "description": "Arquitecto de Software y Desarrollador Full Stack con 5+ años de experiencia. Especialista en React, Node.js, Python, TypeScript y tecnologías modernas.",
+  "url": "https://devescanor.github.io/PortafolioDevSam/",
+  "image": "https://devescanor.github.io/PortafolioDevSam/og-image.jpg",
+  "sameAs": [
+    "https://github.com/DevEscanor"
+  ],
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Veltron Dynamics",
+      "jobTitle": "Fundador"
+    },
+    {
+      "@type": "Organization", 
+      "name": "Arcadius Nic",
+      "jobTitle": "Co-fundador y CTO"
+    }
+  ],
+  "knowsAbout": [
+    "React",
+    "Node.js", 
+    "Python",
+    "TypeScript",
+    "JavaScript",
+    "GraphQL",
+    "Microservicios",
+    "Docker",
+    "DevOps",
+    "Arquitectura de Software"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "Nicaragua"
+  }
+} 

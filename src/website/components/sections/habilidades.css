@@ -115,15 +115,16 @@ line-height: 71px;
     width: 100%;
   }
 }
+
 @media (max-width: 550px){
   .habList{
-  grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
   }
-.habWrapper{
-    gap:20px
+  .habWrapper{
+    gap: 20px;
   }
-.habTitle{
+  .habTitle{
     font-size: 44px;
     line-height: unset;
   }

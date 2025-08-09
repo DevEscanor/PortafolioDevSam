@@ -1,14 +1,30 @@
 {
-    "name": "David Suarez - Portfolio",
-    "short_name": "David Suarez",
+    "name": "David Suárez - Arquitecto de Software & Full Stack Developer",
+    "short_name": "David Suárez",
+    "description": "Portfolio profesional de David Suárez - Arquitecto de Software y Desarrollador Full Stack",
+    "start_url": "/",
+    "scope": "/",
     "icons": [
         {
             "src": "/android-chrome-96x96.png",
             "sizes": "96x96",
             "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#1D51FF",
     "background_color": "#ffffff",
-    "display": "standalone"
+    "display": "standalone",
+    "orientation": "portrait",
+    "categories": ["business", "productivity", "technology"],
+    "lang": "es"
 }

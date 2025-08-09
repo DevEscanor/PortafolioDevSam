@@ -1,2 +1,3 @@
 export { useForm } from './useForm';
-export { useScrollSnap } from './useScrollSnap'; 
+export { useScrollSnap } from './useScrollSnap';
+export { useAnalytics } from './useAnalytics'; 

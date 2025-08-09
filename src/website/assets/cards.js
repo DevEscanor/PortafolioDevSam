@@ -9,8 +9,7 @@ export const cardsProjects = [
     title: 'Hotel San Juan',
     description: 'Creamos una Web App de reserva de habitaciones con un Dashboard para la administración de las reservas y el personal.',
     tag1: 'Diseño UI/UX',
-    tag2: 'Desarrollo de Software',
-    url: 'http://www.hotelsanjuan.travel/'
+    tag2: 'Desarrollo de Software'
   },
   {
     id: 2,
@@ -18,8 +17,7 @@ export const cardsProjects = [
     title: 'Sisprestamos',
     description: 'Sistema que permite llevar el control de cartera y personal al momento de desembolsar los créditos aplicado a microfinancieras',
     tag1: '',
-    tag2: 'Desarrollo de Software',
-    url: ''
+    tag2: 'Desarrollo de Software'
   },
   {
     id: 3,
@@ -27,8 +25,7 @@ export const cardsProjects = [
     title: 'Arcadius',
     description: 'Sitio principal del website Arcadius',
     tag1: '',
-    tag2: 'Desarrollo de Software',
-    url: 'http://www.arcadiusnic.com/'
+    tag2: 'Desarrollo de Software'
   }
 ]
 
