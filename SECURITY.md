@@ -77,5 +77,5 @@ Este portafolio respeta la privacidad del usuario:
 
 ---
 
-**Última actualización:** Diciembre 2024
+**Última actualización:** Agosto 2025
 **Mantenedor:** David Suárez (devsamsuarez@gmail.com) 

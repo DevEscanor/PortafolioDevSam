@@ -21,13 +21,14 @@
 - [🎨 Características del Diseño](#-características-del-diseño)
 - [🌐 Despliegue](#-despliegue)
 - [📁 Estructura del Proyecto](#-estructura-del-proyecto)
+- [🔒 Seguridad](#-seguridad)
 - [🤝 Contribución](#-contribución)
 - [📄 Licencia](#-licencia)
 - [📞 Contacto](#-contacto)
 
 ## 🎯 Descripción
 
-Portfolio web profesional desarrollado con React que muestra mis habilidades, proyectos y experiencia en desarrollo web. El sitio incluye un diseño moderno, responsive y accesible con funcionalidades avanzadas como modo oscuro, internacionalización y navegación fluida.
+Portfolio web profesional desarrollado con React que muestra mis habilidades, proyectos y experiencia en desarrollo web. El sitio incluye un diseño moderno, responsive y accesible con funcionalidades avanzadas como modo oscuro, internacionalización, navegación suave y formulario de contacto funcional.
 
 ## ✨ Características
 
@@ -35,8 +36,8 @@ Portfolio web profesional desarrollado con React que muestra mis habilidades, pr
 - ✨ **Diseño Moderno y Profesional**: Interfaz elegante con gradientes y efectos visuales
 - 🌙 **Modo Oscuro/Claro**: Toggle automático con persistencia de preferencias
 - 📱 **Diseño Responsive**: Optimizado para todos los dispositivos
-- 🎯 **Scroll Snapping**: Navegación fluida entre secciones
 - 🔄 **Animaciones Suaves**: Transiciones y efectos visuales profesionales
+- 🎨 **Transiciones de Color**: Separación visual elegante entre secciones
 
 ### 🌍 **Internacionalización**
 - 🇪🇸 **Español**: Idioma principal
@@ -45,14 +46,20 @@ Portfolio web profesional desarrollado con React que muestra mis habilidades, pr
 
 ### 🧭 **Navegación**
 - 📍 **Indicador de Scroll**: Puntos de navegación visual
-- ⚡ **Scroll Rápido**: Navegación optimizada entre secciones
-- 🎯 **Anclas Inteligentes**: Scroll automático con offset para navbar
+- 📱 **Menú Móvil**: Navegación optimizada para dispositivos móviles
 
 ### 📧 **Funcionalidades**
-- 📝 **Formulario de Contacto**: Integrado con EmailJS
+- 📝 **Formulario de Contacto**: Integrado con EmailJS y validaciones robustas
 - 🔗 **Enlaces Sociales**: Conexión directa a redes profesionales
 - 📊 **Sección de Proyectos**: Showcase de trabajos realizados
 - 💼 **Sección de Habilidades**: Visualización de competencias técnicas
+- 📈 **Analytics**: Seguimiento de interacciones con Google Analytics
+
+### 🔒 **Seguridad y Privacidad**
+- 🛡️ **Validaciones Robustas**: Formularios con validación en tiempo real
+- 🔐 **Variables de Entorno**: Configuración segura de servicios
+- 📊 **Analytics Seguro**: Rastreo transparente y GDPR compliant
+- 🚫 **Sin Datos Sensibles**: No se almacenan datos personales
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -68,6 +75,7 @@ Portfolio web profesional desarrollado con React que muestra mis habilidades, pr
 - ![EmailJS](https://img.shields.io/badge/EmailJS-3.2.0-FF6B6B?logo=emailjs) - Servicio de email
 - ![Formik](https://img.shields.io/badge/Formik-2.2.9-000000?logo=formik) - Manejo de formularios
 - ![React Scroll](https://img.shields.io/badge/React%20Scroll-1.8.9-000000?logo=react-scroll) - Scroll suave
+- ![React Icons](https://img.shields.io/badge/React%20Icons-4.3.1-000000?logo=react) - Iconografía
 
 ### **Despliegue**
 - ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-222222?logo=github-pages) - Hosting gratuito
@@ -92,12 +100,21 @@ Portfolio web profesional desarrollado con React que muestra mis habilidades, pr
    npm install
    ```
 
-3. **Ejecutar en modo desarrollo**
+3. **Configurar variables de entorno**
+   ```bash
+   # Crear archivo .env.local
+   REACT_APP_EMAILJS_SERVICE_ID=tu_service_id
+   REACT_APP_EMAILJS_TEMPLATE_ID=tu_template_id
+   REACT_APP_EMAILJS_USER_ID=tu_user_id
+   REACT_APP_GA_TRACKING_ID=tu_ga_tracking_id
+   ```
+
+4. **Ejecutar en modo desarrollo**
    ```bash
    npm start
    ```
 
-4. **Abrir en el navegador**
+5. **Abrir en el navegador**
    ```
    http://localhost:3000
    ```
@@ -123,6 +140,7 @@ npm run deploy     # Despliega en GitHub Pages
 - **🌍 Cambio de Idioma**: Botones de idioma en la esquina superior derecha
 - **🧭 Navegación**: Usa la navbar o los puntos de scroll para navegar
 - **📧 Contacto**: Llena el formulario para enviar mensajes
+- **📱 Responsive**: Optimizado para móviles y tablets
 
 ## 🎨 Características del Diseño
 
@@ -139,6 +157,7 @@ npm run deploy     # Despliega en GitHub Pages
 --azul-obscuro: #1e40af
 --verde: #10b981
 --rojo: #ef4444
+--bg-dark: #1a1a2e
 ```
 
 ### **Tipografía**
@@ -150,7 +169,7 @@ npm run deploy     # Despliega en GitHub Pages
 - **Gradientes**: Fondos y textos con gradientes profesionales
 - **Sombras**: Sistema de sombras consistente
 - **Animaciones**: Transiciones suaves y efectos hover
-- **Scroll**: Indicadores visuales de navegación
+- **Glassmorphism**: Efectos de cristal modernos
 
 ## 🌐 Despliegue
 
@@ -185,20 +204,44 @@ PortafolioDevSam/
 │   ├── index.html         # HTML principal
 │   └── favicon.ico        # Icono del sitio
 ├── src/                   # Código fuente
-│   ├── components/        # Componentes React
-│   │   ├── navbar/        # Barra de navegación
-│   │   ├── hero/          # Sección principal
-│   │   ├── sections/      # Secciones del sitio
-│   │   ├── footer/        # Pie de página
-│   │   └── contacto/      # Formulario de contacto
+│   ├── website/           # Componentes del sitio web
+│   │   ├── components/    # Componentes React
+│   │   │   ├── navbar/    # Barra de navegación
+│   │   │   ├── hero/      # Sección principal
+│   │   │   ├── sections/  # Secciones del sitio
+│   │   │   ├── footer/    # Pie de página
+│   │   │   └── contacto/  # Formulario de contacto
+│   │   ├── pages/         # Páginas principales
+│   │   ├── assets/        # Recursos estáticos
+│   │   └── media/         # Archivos multimedia
 │   ├── hooks/             # Hooks personalizados
 │   ├── context/           # Contexto de React
 │   ├── translations/      # Archivos de traducción
-│   ├── utils/             # Utilidades
-│   └── assets/            # Recursos estáticos
+│   ├── config/            # Configuraciones
+│   └── utils/             # Utilidades
 ├── package.json           # Dependencias y scripts
-└── README.md             # Documentación
+├── README.md             # Documentación principal
+└── SECURITY.md           # Política de seguridad
 ```
+
+## 🔒 Seguridad
+
+### **Política de Seguridad**
+Este proyecto incluye una política de seguridad completa que cubre:
+
+- 📊 **Configuración de Analytics**: Google Analytics seguro
+- 🛡️ **Variables de Entorno**: Manejo seguro de configuraciones
+- 🔐 **Privacidad**: Cumplimiento GDPR
+- 🚨 **Reporte de Vulnerabilidades**: Proceso de reporte seguro
+
+**Ver [SECURITY.md](SECURITY.md) para más detalles.**
+
+### **Características de Seguridad**
+- ✅ Validación de formularios robusta
+- ✅ Variables de entorno para configuraciones sensibles
+- ✅ Sin datos sensibles en el código del cliente
+- ✅ Protección XSS y CSRF
+- ✅ Dependencias actualizadas regularmente
 
 ## 🤝 Contribución
 
@@ -224,6 +267,7 @@ PortafolioDevSam/
 - Sigue las convenciones de nomenclatura
 - Añade pruebas para nuevas funcionalidades
 - Actualiza la documentación según sea necesario
+- Revisa la política de seguridad antes de contribuir
 
 ## 📄 Licencia
 
@@ -232,7 +276,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para
 ```
 MIT License
 
-Copyright (c) 2024 David Suárez
+Copyright (c) 2025 David Suárez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -269,5 +313,5 @@ SOFTWARE.
 
 <div align="center">
   <p>⭐ Si te gusta este proyecto, ¡dale una estrella en GitHub!</p>
-  <p>🔄 Actualizado por última vez: <strong>Diciembre 2024</strong></p>
+  <p>🔄 Actualizado por última vez: <strong>Agosto 2025</strong></p>
 </div>
